@@ -1,0 +1,78 @@
+*{
+   box-sizing: border-box; 
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#6E3F98,#D5AA97);
+    background-position: 0 top,0 bottom;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+    margin-top: 105px;
+    
+}
+#weather_app{
+    width: 30%;
+    height: 80vh;
+    border: 1px solid white;
+    margin: auto;
+    background-color: rgba(245, 245, 245, 0.082);
+    border-radius: 7px;
+}
+#weather_app>h2{
+color: white;
+text-align: center;
+font-size: 33px;
+}
+.search-bar{
+    width: 54%;
+    margin: auto;
+}
+.search-bar>input{
+width: 80%;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 20px;
+border: 1px solid rgba(182, 182, 182, 0.507);
+outline: none;
+font-size: 18px;
+}
+#btn1{
+    padding: 5px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+#btn1:hover{
+    background-color: rgba(182, 182, 182, 0.507);
+    border: 1px solid white;
+}
+
+#clearSky_pic{
+    /* border: 1px solid red; */
+    width: 34%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    display: flex;
+}
+
+
+#temp-header{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 0;
+}
+#temp-para{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
