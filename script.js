@@ -30,6 +30,10 @@ async function checkWeather() {
 
     var humidity = data.main.humidity
 
+    var wind = data.wind.speed
+    wind = Math.round(wind * 3.6)
+
+
     var sky_div = document.getElementById("clearSky_pic")
     sky_div.innerHTML = ""
 
@@ -69,12 +73,24 @@ async function checkWeather() {
     temp.innerHTML = celsius + "&deg;"
     temp_div.append(temp)
 
+    var time_div = document.getElementById("time-div")
+    time_div.innerHTML = ""
+    var time_para = document.createElement('p')
+
+    time_para.innerHTML = 'As of ' + time + ' IST'
+    time_div.append(time_para)
+
+
     var temp_para_div = document.getElementById("temp-para")
     temp_para_div.innerHTML = ""
 
     var humidity_para = document.createElement('p')
     humidity_para.innerHTML = 'Humidity : ' + humidity + ' %'
     temp_para_div.append(humidity_para)
+
+    var wind_para = document.createElement('p')
+    wind_para.innerHTML = 'Wind : ' + wind + ' km/h'
+    temp_para_div.append(wind_para)
 
 
 
