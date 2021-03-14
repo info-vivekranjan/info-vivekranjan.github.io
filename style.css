@@ -4,12 +4,13 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(#6E3F98,#D5AA97);
+    background-repeat: no-repeat;
     background-position: 0 top,0 bottom;
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 85vh;
-    margin-top: 105px;
+    height: 95vh;
+    margin-top: 70px;
     
 }
 #weather_app{
@@ -76,4 +77,77 @@ font-size: 18px;
     text-align: center;
     color: white;
     font-size: 18px;
+}
+
+@media only screen and (max-width: 1083px) {
+    
+    #weather_app{
+        width: 35%;
+        height: 80vh;
+        border: 1px solid white;
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.082);
+        border-radius: 7px;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    }
+}
+@media only screen and (max-width: 936px) {
+    
+    #weather_app{
+        width: 40%;
+        height: 80vh;
+        border: 1px solid white;
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.082);
+        border-radius: 7px;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    }
+}
+@media only screen and (max-width: 814px) {
+    
+    #weather_app{
+        width: 50%;
+        height: 80vh;
+        border: 1px solid white;
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.082);
+        border-radius: 7px;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    }
+}
+@media only screen and (max-width: 658px) {
+    
+    #weather_app{
+        width: 60%;
+        height: 80vh;
+        border: 1px solid white;
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.082);
+        border-radius: 7px;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    }
+}
+@media only screen and (max-width: 550px) {
+    
+    #weather_app{
+        width: 70%;
+        height: 80vh;
+        border: 1px solid white;
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.082);
+        border-radius: 7px;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    }
+} 
+@media only screen and (max-width: 472px) {
+    
+    #weather_app{
+        width: 80%;
+        height: 80vh;
+        border: 1px solid white;
+        margin: auto;
+        background-color: rgba(245, 245, 245, 0.082);
+        border-radius: 7px;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    }
 }
