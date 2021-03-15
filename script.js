@@ -1,13 +1,15 @@
-
-
 async function checkWeather() {
     var cityName = document.getElementById("search-city").value
+
     var key = "fdc0debbc876a5cc2325a3799fb72717"
     var fetchApi = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`)
 
     var resp = await fetchApi
     var data = await resp.json()
 
+    if (cityName == "" || cityName == " " || cityName == "  ") {
+        alert("Please enter your city")
+    }
 
 
 
@@ -24,6 +26,7 @@ async function checkWeather() {
 
 
     var date = new Date()
+    console.log(date.toDateString());
 
     var time = `${date.getHours()}:${date.getMinutes()}`
 
@@ -56,7 +59,19 @@ async function checkWeather() {
         sky_nature_para.innerHTML = "Haze"
         sky_div.append(sky_nature_para)
 
-    } else if (sky_nature == 'smoke') {
+    } else if (sky_nature == 'mist') {
+
+        let sky_img = document.createElement('img');
+        sky_img.src = "./img/fog.png";
+        sky_div.append(sky_img)
+
+        let sky_nature_para = document.createElement('p')
+        sky_nature_para.innerHTML = "Mist"
+        sky_div.append(sky_nature_para)
+
+
+    }
+    else if (sky_nature == 'smoke') {
         let sky_img = document.createElement('img');
         sky_img.src = "./img/partly_cloudy.png";
         sky_div.append(sky_img)
@@ -65,6 +80,15 @@ async function checkWeather() {
         sky_nature_para.innerHTML = "Smoke"
         sky_div.append(sky_nature_para)
 
+    } else if (sky_nature == 'few clouds') {
+
+        let sky_img = document.createElement('img');
+        sky_img.src = "./img/partly_cloudy.png";
+        sky_div.append(sky_img)
+
+        let sky_nature_para = document.createElement('p')
+        sky_nature_para.innerHTML = "Few Clouds"
+        sky_div.append(sky_nature_para)
     }
 
     var temp_div = document.getElementById('temp-header')
@@ -103,4 +127,5 @@ async function checkWeather() {
 
 
 var btn = document.getElementById("btn1")
+
 btn.addEventListener("click", checkWeather)

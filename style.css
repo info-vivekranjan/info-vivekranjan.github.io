@@ -21,6 +21,11 @@ body{
     background-color: rgba(245, 245, 245, 0.082);
     border-radius: 7px;
     box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    transition: width .5s, height .5s, transform .5s;
+}
+#weather_app:hover{
+width: 31%;
+height: 81vh;
 }
 #weather_app>h2{
 color: white;
@@ -28,9 +33,12 @@ text-align: center;
 font-size: 33px;
 }
 .search-bar{
-    width: 54%;
+    width: 60%;
     margin: auto;
+    padding-top: 18px;
+
 }
+
 .search-bar>input{
 width: 80%;
 padding-top: 5px;
@@ -39,7 +47,14 @@ border-radius: 20px;
 border: 1px solid rgba(182, 182, 182, 0.507);
 outline: none;
 font-size: 18px;
+transition: .5s;
 }
+.search-bar>input:focus{
+    width: 85%;
+    transition: all .5s;
+}
+
+
 #btn1{
     padding: 5px;
     background: none;
@@ -50,7 +65,6 @@ font-size: 18px;
 }
 #btn1:hover{
     background-color: rgba(182, 182, 182, 0.507);
-    border: 1px solid white;
 }
 
 #clearSky_pic{
@@ -88,8 +102,13 @@ font-size: 18px;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        transition: width .5s, height .5s, transform .5s;
     }
+    #weather_app:hover{
+        width: 36%;
+        height: 81vh;
+        }
 }
 @media only screen and (max-width: 936px) {
     
@@ -100,8 +119,13 @@ font-size: 18px;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        transition: width .5s, height .5s, transform .5s;
     }
+    #weather_app:hover{
+        width: 41%;
+        height: 81vh;
+        }
 }
 @media only screen and (max-width: 814px) {
     
@@ -112,8 +136,13 @@ font-size: 18px;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        transition: width .5s, height .5s, transform .5s;
     }
+    #weather_app:hover{
+        width: 51%;
+        height: 81vh;
+        }
 }
 @media only screen and (max-width: 658px) {
     
@@ -124,8 +153,13 @@ font-size: 18px;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        transition: width .5s, height .5s, transform .5s;
     }
+    #weather_app:hover{
+        width: 61%;
+        height: 81vh;
+        }
 }
 @media only screen and (max-width: 550px) {
     
@@ -136,8 +170,13 @@ font-size: 18px;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        transition: width .5s, height .5s, transform .5s;
     }
+    #weather_app:hover{
+        width: 71%;
+        height: 81vh;
+        }
 } 
 @media only screen and (max-width: 472px) {
     
@@ -148,6 +187,11 @@ font-size: 18px;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;;
+        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        transition: width .5s, height .5s, transform .5s;
     }
+    #weather_app:hover{
+        width: 81%;
+        height: 81vh;
+        }
 }
