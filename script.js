@@ -25,8 +25,7 @@ async function checkWeather() {
     h22.innerText = city + " Weather"
 
 
-    var date = new Date()
-    console.log(date.toDateString());
+
 
     var time = `${date.getHours()}:${date.getMinutes()}`
 
@@ -90,6 +89,15 @@ async function checkWeather() {
         sky_nature_para.innerHTML = "Few Clouds"
         sky_div.append(sky_nature_para)
     }
+    else if (sky_nature == 'scattered clouds') {
+        let sky_img = document.createElement('img');
+        sky_img.src = "./img/partly_cloudy.png";
+        sky_div.append(sky_img)
+
+        let sky_nature_para = document.createElement('p')
+        sky_nature_para.innerHTML = "Few Clouds"
+        sky_div.append(sky_nature_para)
+    }
 
     var temp_div = document.getElementById('temp-header')
     temp_div.innerHTML = ""
@@ -105,23 +113,22 @@ async function checkWeather() {
     time_div.append(time_para)
 
 
-    var temp_para_div = document.getElementById("temp-para")
-    temp_para_div.innerHTML = ""
+    // var temp_para_div = document.getElementById("temp-para")
+    // temp_para_div.innerHTML = ""
 
-    var humidity_para = document.createElement('p')
+    var humidity_para = document.getElementById('temp-para-p1')
     humidity_para.innerHTML = 'Humidity : ' + humidity + ' %'
-    temp_para_div.append(humidity_para)
 
-    var wind_para = document.createElement('p')
+    var wind_para = document.getElementById('temp-para-p2')
     wind_para.innerHTML = 'Wind : ' + wind + ' km/h'
-    temp_para_div.append(wind_para)
+
 
 
 
     console.log(data)
     console.log(city, sky_nature, celsius, humidity);
-    console.log(date);
-    console.log(time);
+
+
 }
 
 
@@ -129,3 +136,46 @@ async function checkWeather() {
 var btn = document.getElementById("btn1")
 
 btn.addEventListener("click", checkWeather)
+
+// MODEL BOX
+
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+//model box end 
+//model box content start
+
+
+var date = new Date()
+var newDate = date.toDateString();
+var model_body_div = document.querySelector(".modal-body")
+
+var more_date = document.createElement('p')
+more_date.innerHTML = "Date : " + newDate
+model_body_div.append(more_date)
+
+

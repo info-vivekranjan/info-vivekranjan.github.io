@@ -31,7 +31,7 @@
         </span>
 
         <div id="clearSky_pic">
-            <img src="./img/sunny.png" />
+            <img style="width: 60px;" src="./img/sunny.png" />
             <p>Clear</p>
         </div>
         <div id="temp-header">
@@ -39,8 +39,35 @@
         </div>
 
         <div id="temp-para">
-            <p>Humidity : 00 %</p>
-            <p>Humidity : 0 km/h</p>
+            <div class="temp-para-1">
+                <i style="font-size: 25px; margin-right: 2%;" class="fas fa-tint"></i>
+                <p id="temp-para-p1"> Humidity : 00 %
+                </p>
+            </div>
+            <div class="temp-para-1">
+                <i style="font-size: 25px; margin-right: 2%;" class="fas fa-wind"></i>
+                <p id="temp-para-p2">Wind : 0 km/h</p>
+            </div>
+
+        </div>
+
+        <a id="myBtn">More details<i class="fas fa-arrow-right"></i></a>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3>More Details</h3>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+
         </div>
 
     </div>
