@@ -134,7 +134,16 @@ async function checkWeather() {
         let sky_nature_para = document.createElement('p')
         sky_nature_para.innerHTML = "Few Clouds"
         sky_div.append(sky_nature_para)
+    } else if (sky_nature == 'broken clouds') {
+        let sky_img = document.createElement('img');
+        sky_img.src = "./img/partly_cloudy.png";
+        sky_div.append(sky_img)
+
+        let sky_nature_para = document.createElement('p')
+        sky_nature_para.innerHTML = "Few Clouds"
+        sky_div.append(sky_nature_para)
     }
+
 
     var temp_div = document.getElementById('temp-header')
     temp_div.innerHTML = ""
