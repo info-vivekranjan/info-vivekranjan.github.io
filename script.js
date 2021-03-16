@@ -1,6 +1,42 @@
-async function checkWeather() {
-    var cityName = document.getElementById("search-city").value
 
+// MODEL BOX
+
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("myBtn");
+
+
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+//model box end 
+//model box content start
+
+
+
+
+async function checkWeather() {
+
+    var cityName = document.getElementById("search-city").value
     var key = "fdc0debbc876a5cc2325a3799fb72717"
     var fetchApi = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`)
 
@@ -26,7 +62,7 @@ async function checkWeather() {
 
 
 
-
+    var date = new Date()
     var time = `${date.getHours()}:${date.getMinutes()}`
 
 
@@ -72,7 +108,7 @@ async function checkWeather() {
     }
     else if (sky_nature == 'smoke') {
         let sky_img = document.createElement('img');
-        sky_img.src = "./img/partly_cloudy.png";
+        sky_img.src = "./img/fog.png";
         sky_div.append(sky_img)
 
         let sky_nature_para = document.createElement('p')
@@ -128,54 +164,56 @@ async function checkWeather() {
     console.log(data)
     console.log(city, sky_nature, celsius, humidity);
 
+    var model_body_div = document.querySelector(".modal-body")
+    model_body_div.innerHTML = ""
+
+    var onlydate = new Date()
+    var newDate = onlydate.toDateString();
+    var more_date = document.createElement('p')
+    more_date.innerHTML = "Date : " + newDate
+    model_body_div.append(more_date)
+
+    var sunRise = data.sys.sunrise
+    var newSunrise = new Date(sunRise * 1000)
+    var new_newSunrise = newSunrise.toLocaleTimeString()
+    var more_Sunrise = document.createElement('p')
+    more_Sunrise.innerHTML = 'Sunrise : ' + new_newSunrise
+    model_body_div.append(more_Sunrise)
+
+    var sunSet = data.sys.sunset
+    var newSet = new Date(sunSet * 1000)
+    var new_newSet = newSet.toLocaleTimeString()
+    var more_Sunset = document.createElement('p')
+    more_Sunset.innerHTML = 'Sunset : ' + new_newSet
+    model_body_div.append(more_Sunset)
+
+    var Pressure = data.main.pressure
+    var morePressure = document.createElement('p')
+    morePressure.innerHTML = 'Pressure : ' + Pressure + ' mb'
+    model_body_div.append(morePressure)
+
+    var Visibility = (data.visibility) / 1000
+    var moreVisibility = document.createElement('p')
+    moreVisibility.innerHTML = 'Visibility : ' + Visibility + ' km'
+    model_body_div.append(moreVisibility)
+
 
 }
 
+var cityNam = document.getElementById("search-city")
+
+cityNam.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("btn1").click();
+    }
+});
 
 
 var btn = document.getElementById("btn1")
 
 btn.addEventListener("click", checkWeather)
 
-// MODEL BOX
 
-var modal = document.getElementById("myModal");
-
-
-var btn = document.getElementById("myBtn");
-
-
-
-
-var span = document.getElementsByClassName("close")[0];
-
-
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-
-span.onclick = function () {
-    modal.style.display = "none";
-}
-
-
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-//model box end 
-//model box content start
-
-
-var date = new Date()
-var newDate = date.toDateString();
-var model_body_div = document.querySelector(".modal-body")
-
-var more_date = document.createElement('p')
-more_date.innerHTML = "Date : " + newDate
-model_body_div.append(more_date)
 
 

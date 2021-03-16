@@ -9,28 +9,29 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 95vh;
+    height: 100vh;
     margin-top: 70px;
     
 }
 #weather_app{
     width: 30%;
-    height: 85vh;
+    /* height: 85vh; */
     border: 1px solid white;
     margin: auto;
     background-color: rgba(245, 245, 245, 0.082);
     border-radius: 7px;
     box-shadow: 1px 1px 12px 12px #ffffff8f;;
     transition: width .5s, height .5s, transform .5s;
+    padding-bottom: 15px;
 }
 #weather_app:hover{
 width: 31%;
-height: 86vh;
+/* height: 86vh; */
 }
-#weather_app>h2{
+#weather_app>h3{
 color: white;
 text-align: center;
-font-size: 33px;
+font-size: 28px;
 }
 .search-bar{
     width: 60%;
@@ -94,6 +95,7 @@ transition: .5s;
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 /* MODEL BOX */
@@ -121,7 +123,7 @@ transition: .5s;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 30%;
+    width: 29%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -177,17 +179,31 @@ text-decoration: underline;
     
     #weather_app{
         width: 35%;
-        height: 85vh;
+        /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
         box-shadow: 1px 1px 12px 12px #ffffff8f;
         transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
     }
     #weather_app:hover{
         width: 36%;
-        height: 86vh;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 32%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
     }
     
 }
@@ -195,17 +211,31 @@ text-decoration: underline;
     
     #weather_app{
         width: 40%;
-        height: 85vh;
+        /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
         box-shadow: 1px 1px 12px 12px #ffffff8f;
         transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
     }
     #weather_app:hover{
         width: 41%;
-        height: 86vh;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 37%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
     }
     
     
@@ -214,70 +244,127 @@ text-decoration: underline;
     
     #weather_app{
         width: 50%;
-        height: 85vh;
+        /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
         box-shadow: 1px 1px 12px 12px #ffffff8f;
         transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
     }
     #weather_app:hover{
         width: 51%;
-        height: 86vh;
-        }
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 45%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
 }
 @media only screen and (max-width: 658px) {
     
     #weather_app{
         width: 60%;
-        height: 85vh;
+        /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
         box-shadow: 1px 1px 12px 12px #ffffff8f;
         transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
     }
     #weather_app:hover{
         width: 61%;
-        height: 86vh;
-        }
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 55%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
         
 }
 @media only screen and (max-width: 550px) {
     
     #weather_app{
         width: 70%;
-        height: 85vh;
+        /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
         box-shadow: 1px 1px 12px 12px #ffffff8f;
         transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
     }
     #weather_app:hover{
         width: 71%;
-        height: 86vh;
-        }
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 65%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
         
 } 
 @media only screen and (max-width: 472px) {
     
     #weather_app{
         width: 80%;
-        height: 85vh;
+        /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
         background-color: rgba(245, 245, 245, 0.082);
         border-radius: 7px;
         box-shadow: 1px 1px 12px 12px #ffffff8f;
         transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
     }
     #weather_app:hover{
         width: 81%;
-        height: 86vh;
-        }
+        /* height: 86vh; */
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 75%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
         
 }
