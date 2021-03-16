@@ -29,6 +29,7 @@ window.onclick = function (event) {
 }
 
 //model box end 
+
 //model box content start
 
 
@@ -167,9 +168,11 @@ async function checkWeather() {
     var model_body_div = document.querySelector(".modal-body")
     model_body_div.innerHTML = ""
 
+
     var onlydate = new Date()
     var newDate = onlydate.toDateString();
     var more_date = document.createElement('p')
+    more_date.setAttribute('class', 'model-body-para')
     more_date.innerHTML = "Date : " + newDate
     model_body_div.append(more_date)
 
@@ -177,6 +180,7 @@ async function checkWeather() {
     var newSunrise = new Date(sunRise * 1000)
     var new_newSunrise = newSunrise.toLocaleTimeString()
     var more_Sunrise = document.createElement('p')
+    more_Sunrise.setAttribute('class', 'model-body-para')
     more_Sunrise.innerHTML = 'Sunrise : ' + new_newSunrise
     model_body_div.append(more_Sunrise)
 
@@ -184,16 +188,19 @@ async function checkWeather() {
     var newSet = new Date(sunSet * 1000)
     var new_newSet = newSet.toLocaleTimeString()
     var more_Sunset = document.createElement('p')
+    more_Sunset.setAttribute('class', 'model-body-para')
     more_Sunset.innerHTML = 'Sunset : ' + new_newSet
     model_body_div.append(more_Sunset)
 
     var Pressure = data.main.pressure
     var morePressure = document.createElement('p')
+    morePressure.setAttribute('class', 'model-body-para')
     morePressure.innerHTML = 'Pressure : ' + Pressure + ' mb'
     model_body_div.append(morePressure)
 
     var Visibility = (data.visibility) / 1000
     var moreVisibility = document.createElement('p')
+    moreVisibility.setAttribute('class', 'model-body-para')
     moreVisibility.innerHTML = 'Visibility : ' + Visibility + ' km'
     model_body_div.append(moreVisibility)
 

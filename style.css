@@ -173,7 +173,16 @@ transition: .5s;
 color: rgb(1, 0, 63);
 text-decoration: underline;
 }
-
+.model-body-para{
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+}
+.model-body-para:hover{
+color: #6E3F98;
+text-decoration: underline;
+}
 /* MODEL BOX END */
 @media only screen and (max-width: 1083px) {
     
