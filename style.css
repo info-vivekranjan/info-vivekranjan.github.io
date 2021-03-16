@@ -3,9 +3,11 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(#6E3F98,#D5AA97);
+    background:url('https://lh3.googleusercontent.com/6uIwTqjQzK0xgkssQAbrje6nfHQN_0uZX-l3Py-6zPKIgZr9oKmwqx95gggoPpmn9alNUTRLpc-XAUV38jY0VD8uhenZ94K1zLAk7Z-ntrBGnM4wwzNtFyq-dFVfMnFvTe2ROIQnv4oC4XAKKMhEFvGPoKFhWPa67gcqdYzLd9q_0Qc5WcBmTeZ6N2pdt7WD0Gst6nCfQ1z5JcfuPgWEtuS0kC_EarH1fvWLbwo14bE0jN2yE3Xk5Yy2cjCErfXciqURKvzfVr05hDWQIrJJEtZC6yXT9L0H9UALtIBd_Tgcl1eNgQtviu2Zk98nedpR3M9s3nGDvfU9t3FQj3DWhBxVaNo6cBa9vW51wnltu6H-jjc5edo-47MHTAFd7uRHdRv4fGIj088UoJA22lnQ9B7yKWRegHJSlchO6oW3BlaONwb3TpyHBNHZy6oak5tI8BOYm7oMMFETOmr0zskjSf16waiMdpvet_7Mzg3ROSGmLSq55h78f-e-mU6qHbjjNKquU4JhFMzILEND2vra2eVsxgSWlilZ9f7kQoxSo1jp04mv6zJQEpkoLaXWMXXLx-Ao5tXFeGG3To8Zmf0lHD8JMe00DQ64yhhJJTc3HpP_8ulND8aQs7LCBWGlhQkkwYV0qfu6MYXhiCIyVc7lM8xkUS6Lik4kUNtdJ6ITKNrTu2wJjp-Gy1ofHpD4a7CaDOXvGQw1ge5b309TuJ3W-zX1=w1153-h608-no?authuser=0');
+    /* linear-gradient(#6E3F98,#D5AA97) */
     background-repeat: no-repeat;
-    background-position: 0 top,0 bottom;
+    background-position: 0 0;
+    background-size:cover;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -18,9 +20,11 @@ body{
     /* height: 85vh; */
     border: 1px solid white;
     margin: auto;
-    background-color: rgba(245, 245, 245, 0.082);
+    background-color: #0000008f;
+    box-shadow: 1px 1px 12px 12px #00000046;
+    /* #f5f5f515; */
     border-radius: 7px;
-    box-shadow: 1px 1px 12px 12px #ffffff8f;;
+    
     transition: width .5s, height .5s, transform .5s;
     padding-bottom: 15px;
 }
@@ -159,7 +163,8 @@ transition: .5s;
   
   .modal-header {
     padding: 1px 16px;
-    background: linear-gradient(50deg,#6E3F98,#D5AA97);
+    background: linear-gradient(50deg,#0099ff,rgb(0, 255, 85));
+    /* #6E3F98,#D5AA97 */
     color: white;
   }
   
@@ -191,9 +196,11 @@ text-decoration: underline;
         /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
-        background-color: rgba(245, 245, 245, 0.082);
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+    
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        
         transition: width .5s, height .5s, transform .5s;
         padding-bottom: 15px;
     }
@@ -223,9 +230,10 @@ text-decoration: underline;
         /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
-        background-color: rgba(245, 245, 245, 0.082);
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        
         transition: width .5s, height .5s, transform .5s;
         padding-bottom: 15px;
     }
@@ -256,9 +264,10 @@ text-decoration: underline;
         /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
-        background-color: rgba(245, 245, 245, 0.082);
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        
         transition: width .5s, height .5s, transform .5s;
         padding-bottom: 15px;
     }
@@ -287,9 +296,11 @@ text-decoration: underline;
         /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
-        background-color: rgba(245, 245, 245, 0.082);
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        
         transition: width .5s, height .5s, transform .5s;
         padding-bottom: 15px;
     }
@@ -319,9 +330,11 @@ text-decoration: underline;
         /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
-        background-color: rgba(245, 245, 245, 0.082);
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        
         transition: width .5s, height .5s, transform .5s;
         padding-bottom: 15px;
     }
@@ -351,9 +364,11 @@ text-decoration: underline;
         /* height: 85vh; */
         border: 1px solid white;
         margin: auto;
-        background-color: rgba(245, 245, 245, 0.082);
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        
         border-radius: 7px;
-        box-shadow: 1px 1px 12px 12px #ffffff8f;
+        
         transition: width .5s, height .5s, transform .5s;
         padding-bottom: 15px;
     }
