@@ -1,0 +1,394 @@
+*{
+   box-sizing: border-box; 
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:url('https://lh3.googleusercontent.com/6uIwTqjQzK0xgkssQAbrje6nfHQN_0uZX-l3Py-6zPKIgZr9oKmwqx95gggoPpmn9alNUTRLpc-XAUV38jY0VD8uhenZ94K1zLAk7Z-ntrBGnM4wwzNtFyq-dFVfMnFvTe2ROIQnv4oC4XAKKMhEFvGPoKFhWPa67gcqdYzLd9q_0Qc5WcBmTeZ6N2pdt7WD0Gst6nCfQ1z5JcfuPgWEtuS0kC_EarH1fvWLbwo14bE0jN2yE3Xk5Yy2cjCErfXciqURKvzfVr05hDWQIrJJEtZC6yXT9L0H9UALtIBd_Tgcl1eNgQtviu2Zk98nedpR3M9s3nGDvfU9t3FQj3DWhBxVaNo6cBa9vW51wnltu6H-jjc5edo-47MHTAFd7uRHdRv4fGIj088UoJA22lnQ9B7yKWRegHJSlchO6oW3BlaONwb3TpyHBNHZy6oak5tI8BOYm7oMMFETOmr0zskjSf16waiMdpvet_7Mzg3ROSGmLSq55h78f-e-mU6qHbjjNKquU4JhFMzILEND2vra2eVsxgSWlilZ9f7kQoxSo1jp04mv6zJQEpkoLaXWMXXLx-Ao5tXFeGG3To8Zmf0lHD8JMe00DQ64yhhJJTc3HpP_8ulND8aQs7LCBWGlhQkkwYV0qfu6MYXhiCIyVc7lM8xkUS6Lik4kUNtdJ6ITKNrTu2wJjp-Gy1ofHpD4a7CaDOXvGQw1ge5b309TuJ3W-zX1=w1153-h608-no?authuser=0');
+    /* linear-gradient(#6E3F98,#D5AA97) */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size:cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    margin-top: 70px;
+    
+}
+#weather_app{
+    width: 30%;
+    /* height: 85vh; */
+    border: 1px solid white;
+    margin: auto;
+    background-color: #0000008f;
+    box-shadow: 1px 1px 12px 12px #00000046;
+    /* #f5f5f515; */
+    border-radius: 7px;
+    
+    transition: width .5s, height .5s, transform .5s;
+    padding-bottom: 15px;
+}
+#weather_app:hover{
+width: 31%;
+/* height: 86vh; */
+}
+#weather_app>h3{
+color: white;
+text-align: center;
+font-size: 28px;
+}
+.search-bar{
+    width: 60%;
+    margin: auto;
+    padding-top: 18px;
+
+}
+
+.search-bar>input{
+width: 80%;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 20px;
+border: 1px solid rgba(182, 182, 182, 0.507);
+outline: none;
+font-size: 18px;
+transition: .5s;
+}
+
+
+
+#btn1{
+    padding: 5px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+#btn1:hover{
+    background-color: rgba(182, 182, 182, 0.507);
+}
+
+#clearSky_pic{
+    /* border: 1px solid red; */
+    width: 34%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    display: flex;
+}
+
+
+#temp-header{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 0;
+}
+#temp-para,#time-div{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.temp-para-1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* MODEL BOX */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 29%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 1px 16px;
+    background: linear-gradient(50deg,#0099ff,rgb(0, 255, 85));
+    /* #6E3F98,#D5AA97 */
+    color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+#myBtn{
+    color: white;
+    cursor: pointer;
+}
+#myBtn:hover{
+color: rgb(1, 0, 63);
+text-decoration: underline;
+}
+.model-body-para{
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+}
+.model-body-para:hover{
+color: #6E3F98;
+text-decoration: underline;
+}
+/* MODEL BOX END */
+@media only screen and (max-width: 1083px) {
+    
+    #weather_app{
+        width: 35%;
+        /* height: 85vh; */
+        border: 1px solid white;
+        margin: auto;
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+    
+        border-radius: 7px;
+        
+        transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
+    }
+    #weather_app:hover{
+        width: 36%;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 32%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    
+}
+@media only screen and (max-width: 936px) {
+    
+    #weather_app{
+        width: 40%;
+        /* height: 85vh; */
+        border: 1px solid white;
+        margin: auto;
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        border-radius: 7px;
+        
+        transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
+    }
+    #weather_app:hover{
+        width: 41%;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 37%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    
+    
+}
+@media only screen and (max-width: 814px) {
+    
+    #weather_app{
+        width: 50%;
+        /* height: 85vh; */
+        border: 1px solid white;
+        margin: auto;
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        border-radius: 7px;
+        
+        transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
+    }
+    #weather_app:hover{
+        width: 51%;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 45%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+}
+@media only screen and (max-width: 658px) {
+    
+    #weather_app{
+        width: 60%;
+        /* height: 85vh; */
+        border: 1px solid white;
+        margin: auto;
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        
+        border-radius: 7px;
+        
+        transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
+    }
+    #weather_app:hover{
+        width: 61%;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 55%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+        
+}
+@media only screen and (max-width: 550px) {
+    
+    #weather_app{
+        width: 70%;
+        /* height: 85vh; */
+        border: 1px solid white;
+        margin: auto;
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        
+        border-radius: 7px;
+        
+        transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
+    }
+    #weather_app:hover{
+        width: 71%;
+        /* height: 86vh; */
+    }
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 65%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+        
+} 
+@media only screen and (max-width: 472px) {
+    
+    #weather_app{
+        width: 80%;
+        /* height: 85vh; */
+        border: 1px solid white;
+        margin: auto;
+        background-color: #0000008f;
+        box-shadow: 1px 1px 12px 12px #00000046;
+        
+        border-radius: 7px;
+        
+        transition: width .5s, height .5s, transform .5s;
+        padding-bottom: 15px;
+    }
+    #weather_app:hover{
+        width: 81%;
+        /* height: 86vh; */
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 75%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+        
+}
