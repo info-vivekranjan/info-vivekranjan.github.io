@@ -143,6 +143,15 @@ async function checkWeather() {
         sky_nature_para.innerHTML = "Few Clouds"
         sky_div.append(sky_nature_para)
     }
+    else if (sky_nature == 'overcast clouds') {
+        let sky_img = document.createElement('img');
+        sky_img.src = "./img/cloudy.png";
+        sky_div.append(sky_img)
+
+        let sky_nature_para = document.createElement('p')
+        sky_nature_para.innerHTML = "Mostly cloudy"
+        sky_div.append(sky_nature_para)
+    }
 
 
     var temp_div = document.getElementById('temp-header')

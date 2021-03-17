@@ -163,7 +163,7 @@ transition: .5s;
   
   .modal-header {
     padding: 1px 16px;
-    background: linear-gradient(50deg,linear-gradient(#6E3F98,#D5AA97));
+    background: linear-gradient(50deg,#6E3F98,#D5AA97);
     /* #6E3F98,#D5AA97 */
     color: white;
   }
