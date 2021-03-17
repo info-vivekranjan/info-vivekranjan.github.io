@@ -44,6 +44,10 @@ async function checkWeather() {
     var resp = await fetchApi
     var data = await resp.json()
 
+    if (cityName != data.name) {
+        alert("Please enter a correct city")
+    }
+
     if (cityName == "" || cityName == " " || cityName == "  ") {
         alert("Please enter your city")
     }
