@@ -16,12 +16,20 @@ body{
     
 }
 .degree-c{
+    width:100%;
     margin-bottom: 0;
     padding-bottom: 0;
+    text-align: right;
+    margin-top: 10px;
+}
+.degree-c>a{
+    text-decoration: none;
     color: white;
-    display: flex;
-    flex-direction: row-reverse; 
     margin-right: 10px;
+    
+}
+.degree-c>a:hover{
+    color: yellow;
 }
 #weather_app{
     width: 30%;
