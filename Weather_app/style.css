@@ -11,8 +11,9 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: fit-content;
     margin-top: 70px;
+    padding-bottom: 100px;
     
 }
 .degree-c{
@@ -43,6 +44,7 @@ body{
     
     transition: width .5s, height .5s, transform .5s;
     padding-bottom: 15px;
+    
 }
 #weather_app:hover{
 width: 31%;
