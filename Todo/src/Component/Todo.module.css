@@ -90,3 +90,36 @@
 .h32{
     color: greenyellow;
 }
+@media only screen and (max-width: 800px) {
+    .wholeTodo{
+        width: 65%;
+        margin: auto;
+        box-shadow: 3px 3px 10px 7px #0f092b;
+        background-color: #231e39c0;
+        color: #B3B8CD;
+        min-height: 90vh;
+        padding-bottom: 15px;
+    }
+} 
+@media only screen and (max-width: 600px) {
+    .wholeTodo{
+        width: 80%;
+        margin: auto;
+        box-shadow: 3px 3px 10px 7px #0f092b;
+        background-color: #231e39c0;
+        color: #B3B8CD;
+        min-height: 90vh;
+        padding-bottom: 15px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .wholeTodo{
+        width: 95%;
+        margin: auto;
+        box-shadow: 3px 3px 10px 7px #0f092b;
+        background-color: #231e39c0;
+        color: #B3B8CD;
+        min-height: 90vh;
+        padding-bottom: 15px;
+    }
+}
