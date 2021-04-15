@@ -1,0 +1,92 @@
+.wholeTodo{
+    width: 50%;
+    margin: auto;
+    box-shadow: 3px 3px 10px 7px #0f092b;
+    background-color: #231e39c0;
+    color: #B3B8CD;
+    min-height: 90vh;
+    padding-bottom: 15px;
+}
+.wholeTodo>h1{
+    color: #dfe1eb;
+}
+
+.todoInput{
+    padding: 10px;
+    width: 35%;
+    font-size: 18px;
+    border: 2px solid #0f092b;
+    border-radius: 8px;
+    background-color: #0f092b;
+    color: #B3B8CD;
+
+}
+.starLogo{
+    width: 23px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+.removeLogo{
+    width: 23px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.todoList{
+    border: 2px solid #B3B8CD;
+    width: 42%;
+    margin:10px auto;
+    border-radius: 4px;
+    padding: 0px;
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 18px;
+    
+}
+.completeTodo{
+    width: 23px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.incompleteTodo{
+    width: 23px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.addButton{
+    width: fit-content;
+    padding: 11px;
+    background-color: #FEBB0B;
+    border-radius: 4px;
+    color: #0f092b;
+    font-size: 17px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+}
+.addButton:hover{
+    background-color: #fcb500f8;
+}
+.showHide{
+    width: fit-content;
+    padding: 8px;
+    background-color: #FEBB0B;
+    border-radius: 4px;
+    color: #0f092b;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.showHide:hover{
+    background-color: #0f092b;
+    color: #B3B8CD;
+}
+.h31{
+    color: tomato;
+}
+.h32{
+    color: greenyellow;
+}
