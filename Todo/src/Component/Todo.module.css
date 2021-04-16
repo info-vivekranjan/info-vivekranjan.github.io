@@ -100,6 +100,28 @@
         min-height: 90vh;
         padding-bottom: 15px;
     }
+    .todoInput{
+        padding: 10px;
+        width: 45%;
+        font-size: 18px;
+        border: 2px solid #0f092b;
+        border-radius: 8px;
+        background-color: #0f092b;
+        color: #B3B8CD;
+    
+    }
+
+    .todoList{
+        border: 2px solid #B3B8CD;
+        width: 55%;
+        margin:10px auto;
+        border-radius: 4px;
+        padding: 0px;
+        display: flex;
+        justify-content:space-evenly;
+        font-size: 18px;
+        
+    }
 } 
 @media only screen and (max-width: 600px) {
     .wholeTodo{
@@ -111,6 +133,30 @@
         min-height: 90vh;
         padding-bottom: 15px;
     }
+
+    .todoInput{
+        padding: 10px;
+        width: 55%;
+        font-size: 18px;
+        border: 2px solid #0f092b;
+        border-radius: 8px;
+        background-color: #0f092b;
+        color: #B3B8CD;
+    
+    }
+
+    .todoList{
+        border: 2px solid #B3B8CD;
+        width: 65%;
+        margin:10px auto;
+        border-radius: 4px;
+        padding: 0px;
+        display: flex;
+        justify-content:space-evenly;
+        font-size: 18px;
+        
+    }
+
 }
 @media only screen and (max-width: 450px) {
     .wholeTodo{
@@ -121,5 +167,27 @@
         color: #B3B8CD;
         min-height: 90vh;
         padding-bottom: 15px;
+    }
+    .todoInput{
+        padding: 10px;
+        width: 65%;
+        font-size: 18px;
+        border: 2px solid #0f092b;
+        border-radius: 8px;
+        background-color: #0f092b;
+        color: #B3B8CD;
+    
+    }
+
+    .todoList{
+        border: 2px solid #B3B8CD;
+        width: 75%;
+        margin:10px auto;
+        border-radius: 4px;
+        padding: 0px;
+        display: flex;
+        justify-content:space-evenly;
+        font-size: 18px;
+        
     }
 }
