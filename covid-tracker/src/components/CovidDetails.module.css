@@ -1,3 +1,26 @@
+
+  .typingerase {
+    font-size: 70px;
+    color: #E3002D;
+    margin: 0;
+  }
+  .covidLogoImg{
+    height: 40vmin;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .covidLogoImg{
+      animation: covidLogoImg-spin infinite 20s linear;
+    }
+  }
+  @keyframes covidLogoImg-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .allDataCont{
     /* border: 1px solid red; */
     display: flex;
@@ -52,6 +75,21 @@
 .allDeceased:hover{
     background-color: #caced3b2;
 }
+
+/* //////////////////////////////////////////////// */
+.singleCountry{
+    /* border: 1px solid black; */
+    color: #ffd000;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+
+}
+.singleCountry:hover{
+    background-color: #ffd1526e;
+}
+
+
 
 /* ////////////////////////////////// */
 

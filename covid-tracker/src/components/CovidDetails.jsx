@@ -3,7 +3,7 @@ import { FetchAll, FetchCovid, FetchCovidCountry } from './FetchCovid';
 import styles from './CovidDetails.module.css';
 import { CovidTable } from './CovidTable';
 import { SingleCountryData } from './SingleCountryData';
-
+import covidLogo from "../covidimg.svg"
 
 function CovidDetails() {
 
@@ -94,7 +94,8 @@ function CovidDetails() {
 
     return (
         <div>
-            <h1 style={{ fontSize: "70px", color: "#EA4335" }}>Covid 19</h1>
+            <img src={covidLogo} alt="covidLogo" className={styles.covidLogoImg} />
+            <h1 className={styles.typingerase}>Covid 19</h1>
 
 
 

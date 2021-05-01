@@ -14,7 +14,7 @@ function SingleCountryData({ data }) {
                 <>
                     <div className={styles.singleDataCont}>
 
-                        <div className={styles.allConfirmed}>
+                        <div className={styles.singleCountry}>
                             <h2>{data.country}</h2>
 
                             <img className={styles.flagImg}
