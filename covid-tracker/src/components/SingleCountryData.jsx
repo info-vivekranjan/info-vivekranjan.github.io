@@ -24,7 +24,7 @@ function SingleCountryData({ data }) {
 
                         </div>
 
-                        <div className={styles.allConfirmed}>
+                        <div className={styles.singleConfirmed}>
                             <h4>Confirmed</h4>
                             <h5> +
                             {
@@ -42,7 +42,7 @@ function SingleCountryData({ data }) {
                             </h2>
                         </div>
 
-                        <div className={styles.allActive}>
+                        <div className={styles.singleActive}>
                             <h4>Active</h4>
                             <h5>0</h5>
                             <h2>
@@ -54,7 +54,7 @@ function SingleCountryData({ data }) {
                             </h2>
                         </div>
 
-                        <div className={styles.allRecovered}>
+                        <div className={styles.singleRecovered}>
                             <h4>Recovered</h4>
                             <h5> +
                                 {
@@ -72,7 +72,7 @@ function SingleCountryData({ data }) {
                             </h2>
                         </div>
 
-                        <div className={styles.allDeceased}>
+                        <div className={styles.singleDeceased}>
                             <h4>Deceased</h4>
                             <h5> +
                                 {

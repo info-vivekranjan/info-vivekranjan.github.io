@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FetchAll, FetchCovid, FetchCovidCountry } from './FetchCovid';
 import styles from './CovidDetails.module.css';
 import { CovidTable } from './CovidTable';
@@ -13,12 +13,13 @@ function CovidDetails() {
     const [countryData, setCountryData] = useState([])
     const [hl, setHl] = useState(true)
 
+    const ref = useRef();
 
     const handleAllData = () => {
         FetchAll()
             .then((res) => {
 
-                // console.log(res);
+                console.log(res);
                 setAllData(res.data)
             })
             .catch((err) => {
@@ -61,7 +62,7 @@ function CovidDetails() {
         FetchCovidCountry()
             .then((res) => {
 
-                console.log(res);
+                // console.log(res);
                 setCountryData(res.data)
             })
             .catch((err) => {
@@ -78,6 +79,16 @@ function CovidDetails() {
 
 
 
+    const handleMoveUp = () => {
+        window.scrollTo({
+            top: ref.current.offsetTop,
+            behavior: "smooth"
+        })
+    }
+
+    useEffect(() => {
+        handleMoveUp();
+    }, [])
 
 
     const handleKeypress = e => {
@@ -90,10 +101,9 @@ function CovidDetails() {
 
 
 
-
-
     return (
         <div>
+            <div ref={ref}></div>
             <img src={covidLogo} alt="covidLogo" className={styles.covidLogoImg} />
             <h1 className={styles.typingerase}>Covid 19</h1>
 
@@ -196,6 +206,32 @@ function CovidDetails() {
 
 
             <CovidTable countryData={countryData} setHl={setHl} hl={hl} />
+
+
+            <div style={{
+                position: "fixed",
+                right: "0",
+                bottom: "0",
+                marginBottom: "30px",
+                marginRight: "30px",
+                scrollBehavior: "smooth",
+
+            }}>
+
+                <i
+                    style={{
+                        color: "white",
+                        fontSize: "45px",
+                        backgroundColor: "#007BFF",
+                        cursor: "pointer",
+                        borderRadius: "50%",
+                    }}
+                    onClick={handleMoveUp} className="ri-arrow-up-s-line"
+                >
+
+                </i>
+            </div>
+
         </div >
     )
 }
