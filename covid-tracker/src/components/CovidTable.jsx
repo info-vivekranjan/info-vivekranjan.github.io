@@ -6,7 +6,17 @@ function CovidTable({ countryData, setHl, hl }) {
         <div className={styles.tableHeader}>
             <tr>
                 <th>Country</th>
-                <th style={{ cursor: "pointer" }} onClick={() => setHl(false)}>Total Cases</th>
+                <th style={{ cursor: "pointer" }} onClick={() => setHl(!hl)}>
+                    {
+                        hl &&
+                        <i style={{ marginRight: "10px" }} class="ri-sort-desc"></i>
+                    }
+                    {
+                        !hl &&
+                        <i style={{ marginRight: "10px" }} class="ri-sort-asc"></i>
+                    }
+                    Total Cases
+                    </th>
                 <th>New Cases</th>
 
                 <th>Total Deceased</th>
@@ -23,7 +33,8 @@ function CovidTable({ countryData, setHl, hl }) {
         </div>
         <div>
             {
-                countryData.sort((a, b) => hl ? b.cases - a.cases : a.cases - b.cases)
+                countryData
+                    .sort((a, b) => hl ? b.cases - a.cases : a.cases - b.cases)
                     .map((item) => {
                         return <div className={styles.allCountryData}>
                             <tr>

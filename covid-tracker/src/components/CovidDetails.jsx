@@ -4,14 +4,31 @@ import styles from './CovidDetails.module.css';
 import { CovidTable } from './CovidTable';
 import { SingleCountryData } from './SingleCountryData';
 import covidLogo from "../covidimg.svg"
+import { useWindowScroll } from 'react-use';
+
 
 function CovidDetails() {
 
-    const [query, setQuery] = useState("");
+    const [query, setQuery] = useState("India");
     const [data, setData] = useState([]);
     const [allData, setAllData] = useState("")
     const [countryData, setCountryData] = useState([])
     const [hl, setHl] = useState(true)
+
+    const { y: pageYOffset } = useWindowScroll();
+    const [isVisible, setIsVisible] = useState(false);
+
+
+
+    useEffect(() => {
+        if (pageYOffset > 100) {
+            setIsVisible(true)
+        } else {
+            setIsVisible(false)
+        }
+    }, [pageYOffset])
+
+
 
     const ref = useRef();
 
@@ -104,80 +121,87 @@ function CovidDetails() {
     return (
         <div>
             <div ref={ref}></div>
-            <img src={covidLogo} alt="covidLogo" className={styles.covidLogoImg} />
-            <h1 className={styles.typingerase}>Covid 19</h1>
+            <div className={styles.landingPage}>
+
+
+                <img src={covidLogo} alt="covidLogo" className={styles.covidLogoImg} />
+                <h1 className={styles.typingerase}>Covid 19</h1>
 
 
 
-            <>
-                <div className={styles.allDataCont}>
-                    <div className={styles.allConfirmed}>
-                        <h4>Confirmed</h4>
-                        <h5> + {
-                            Number(parseFloat(allData.todayCases).toFixed(2)).toLocaleString('en', {
-                                minimumFractionDigits: 0
-                            })
-                        }
-                        </h5>
-                        <h2>
-                            {
-                                Number(parseFloat(allData.cases).toFixed(2)).toLocaleString('en', {
+                <>
+                    <div className={styles.allDataCont}>
+                        <div className={styles.allConfirmed}>
+                            <h4>Confirmed</h4>
+                            <h5> + {
+                                Number(parseFloat(allData.todayCases).toFixed(2)).toLocaleString('en', {
                                     minimumFractionDigits: 0
                                 })
                             }
-                        </h2>
+                            </h5>
+                            <h2>
+                                {
+                                    Number(parseFloat(allData.cases).toFixed(2)).toLocaleString('en', {
+                                        minimumFractionDigits: 0
+                                    })
+                                }
+                            </h2>
 
-                    </div>
+                        </div>
 
-                    <div className={styles.allActive}>
-                        <h4>Active</h4>
-                        <h5>0</h5>
-                        <h2>
-                            {
-                                Number(parseFloat(allData.active).toFixed(2)).toLocaleString('en', {
+                        <div className={styles.allActive}>
+                            <h4>Active</h4>
+                            <h5>0</h5>
+                            <h2>
+                                {
+                                    Number(parseFloat(allData.active).toFixed(2)).toLocaleString('en', {
+                                        minimumFractionDigits: 0
+                                    })
+                                }
+                            </h2>
+                        </div>
+
+                        <div className={styles.allRecovered}>
+                            <h4>Recovered</h4>
+                            <h5> + {
+                                Number(parseFloat(allData.todayRecovered).toFixed(2)).toLocaleString('en', {
                                     minimumFractionDigits: 0
                                 })
                             }
-                        </h2>
-                    </div>
+                            </h5>
 
-                    <div className={styles.allRecovered}>
-                        <h4>Recovered</h4>
-                        <h5> + {
-                            Number(parseFloat(allData.todayRecovered).toFixed(2)).toLocaleString('en', {
-                                minimumFractionDigits: 0
-                            })
-                        }
-                        </h5>
+                            <h2>
+                                {
+                                    Number(parseFloat(allData.recovered).toFixed(2)).toLocaleString('en', {
+                                        minimumFractionDigits: 0
+                                    })
+                                }
+                            </h2>
+                        </div>
 
-                        <h2>
-                            {
-                                Number(parseFloat(allData.recovered).toFixed(2)).toLocaleString('en', {
+                        <div className={styles.allDeceased}>
+                            <h4>Deceased</h4>
+                            <h5> + {
+                                Number(parseFloat(allData.todayDeaths).toFixed(2)).toLocaleString('en', {
                                     minimumFractionDigits: 0
                                 })
                             }
-                        </h2>
-                    </div>
+                            </h5>
 
-                    <div className={styles.allDeceased}>
-                        <h4>Deceased</h4>
-                        <h5> + {
-                            Number(parseFloat(allData.todayDeaths).toFixed(2)).toLocaleString('en', {
-                                minimumFractionDigits: 0
-                            })
-                        }
-                        </h5>
-
-                        <h2>
-                            {
-                                Number(parseFloat(allData.deaths).toFixed(2)).toLocaleString('en', {
-                                    minimumFractionDigits: 0
-                                })
-                            }
-                        </h2>
+                            <h2>
+                                {
+                                    Number(parseFloat(allData.deaths).toFixed(2)).toLocaleString('en', {
+                                        minimumFractionDigits: 0
+                                    })
+                                }
+                            </h2>
+                        </div>
                     </div>
-                </div>
-            </>
+                </>
+
+
+
+            </div>
 
 
             <>
@@ -186,7 +210,7 @@ function CovidDetails() {
 
                     <div className={styles.inputCont}>
 
-                        <i onClick={handleSingleData} class="ri-search-line">
+                        <i onClick={handleSingleData} className="ri-search-line">
                             <input className={styles.searchCountry}
                                 value={query}
                                 placeholder="Search Country"
@@ -208,29 +232,18 @@ function CovidDetails() {
             <CovidTable countryData={countryData} setHl={setHl} hl={hl} />
 
 
-            <div style={{
-                position: "fixed",
-                right: "0",
-                bottom: "0",
-                marginBottom: "30px",
-                marginRight: "30px",
-                scrollBehavior: "smooth",
 
-            }}>
+            {
+                isVisible &&
 
-                <i
-                    style={{
-                        color: "white",
-                        fontSize: "45px",
-                        backgroundColor: "#007BFF",
-                        cursor: "pointer",
-                        borderRadius: "50%",
-                    }}
-                    onClick={handleMoveUp} className="ri-arrow-up-s-line"
-                >
+                <div className={styles.scrollTopDiv}>
 
-                </i>
-            </div>
+                    <i onClick={handleMoveUp} className="ri-arrow-up-s-line"></i>
+                </div>
+
+            }
+
+
 
         </div >
     )
