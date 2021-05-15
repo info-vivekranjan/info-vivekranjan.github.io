@@ -1,0 +1,20 @@
+.aboutPageCont{
+    width: 45%;
+    margin:0 auto;
+    height: 100vh;
+}
+.aboutQA{
+    padding: 20px;
+}
+.question{
+    font-size: 18px;
+    font-weight: 500;
+    color: #5d6063;
+    text-align: left;
+}
+.answer{
+    font-size: 20px;
+    font-weight: 600;
+    color: #007BFF;
+    text-align: left;
+}

@@ -1,0 +1,379 @@
+.homePageCont{
+    margin-left: 80px;
+}
+
+.landingPage{
+    width: 100%;
+    animation: fadeInAnimation ease 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+
+  .typingerase {
+    font-size: 70px;
+    color: #E3002D;
+    margin: 0;
+  }
+  .covidLogoImg{
+    height: 40vmin;
+    pointer-events: none;
+
+    animation: fadeInAnimation ease 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+  }
+
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+
+  @media (prefers-reduced-motion: no-preference) {
+    .covidLogoImg{
+      animation: covidLogoImg-spin infinite 20s linear;
+    }
+  }
+  @keyframes covidLogoImg-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.allDataCont{
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 5px;
+    
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+
+    animation: fadeInAnimationX ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+
+
+@keyframes fadeInAnimationX {
+    0% {
+        opacity: 0;
+        transform: translate(-30px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    
+     }
+}
+
+.allConfirmed{
+    /* border: 1px solid black; */
+    color: #FF073A;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.allConfirmed:hover{
+    background-color: #ff759142;
+}
+.allActive{
+    /* border: 1px solid blue; */
+    color: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.allActive:hover{
+    background-color: #3874b450;
+}
+.allRecovered{
+    /* border: 1px solid rgb(238, 44, 76); */
+    color: #28A745;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.allRecovered:hover{
+    background-color: #0bff4442;
+}
+
+.allDeceased{
+    /* border: 1px solid blue; */
+    color: #6C757D;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.allDeceased:hover{
+    background-color: #caced3b2;
+}
+
+/* //////////////////////////////////////////////// */
+.singleCountry{
+    /* border: 1px solid black; */
+    color: #6C0D77;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    transition: 0.5s;
+}
+.singleCountry:hover{
+    background-color: #d205fb3b;
+}
+
+
+.singleConfirmed{
+    /* border: 1px solid black; */
+    color: #FF073A;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    transition: 0.5s;
+}
+.singleConfirmed:hover{
+    background-color: #ff759142;
+}
+.singleActive{
+    /* border: 1px solid blue; */
+    color: #007BFF;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    transition: 0.5s;
+}
+.singleActive:hover{
+    background-color: #3874b450;
+}
+.singleRecovered{
+    /* border: 1px solid rgb(238, 44, 76); */
+    color: #28A745;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    transition: 0.5s;
+}
+.singleRecovered:hover{
+    background-color: #0bff4442;
+}
+
+.singleDeceased{
+    /* border: 1px solid blue; */
+    color: #6C757D;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 24%;
+    transition: 0.5s;
+}
+.singleDeceased:hover{
+    background-color: #caced3b2;
+}
+
+
+
+/* ////////////////////////////////// */
+
+
+
+
+.fetchedDataCont{
+    
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.fetchedData{
+    /* border: 1px solid black; */
+    width: 75%;
+    margin: 30px auto;
+    padding: 1px;
+    box-shadow: 1px 1px 12px 7px rgba(216, 216, 216, 0.322);
+    transition: 0.5s;
+
+}
+.fetchedData:hover{
+    box-shadow: 2px 2px 12px 7px rgba(197, 197, 197, 0.644);
+}
+
+.singleDataCont{
+    display: flex;
+    padding: 40px;
+    
+    width: 90%;
+    margin: auto;
+
+
+}
+.flagImg{
+    width: 120px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 1px 1px 8px 6px rgba(199, 199, 199, 0.726);
+}
+
+
+.wholeInputCont{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.inputCont{
+    box-shadow: 2px 2px 12px 7px rgba(216, 216, 216, 0.637);
+    width: 100%;
+    padding: 4px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none; 
+    color: gray;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.searchCountry{
+    width: 90%;
+    font-size: 18px;
+    padding: 18px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: gray;
+
+}
+
+
+/* /////////////////////////////////////// */
+/* Table Cont */
+
+.allTableCont{
+    /* border: 1px solid rgb(94, 91, 91); */
+    font-size: 15px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: auto;
+    width: 90%;
+    margin: auto;
+    color: #6C757D;
+    text-align: right;
+}
+
+.tableHeader{
+    /* border: 1px solid blue; */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    
+}
+.tableHeader2{
+    background-color: rgb(235, 235, 235);
+    font-weight: 700;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+.tableHeader .headerBlock{
+    border: 1px solid #ddd;
+}
+.headerBlock{
+    /* border: 1px solid black; */
+    width: 96px;
+    padding: 10px 15px;
+}
+
+.tableHeader:nth-child(even){
+    background-color: #F6F6F7;
+}
+
+.tableHeader:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.countryColumn{
+    background-color: rgb(235, 235, 235);
+    font-weight: 700;
+    text-align: left;
+}
+.newCaseColumn{
+    color: #007BFF;
+}
+
+.newDeathsColumn{
+    color: #E3002D;
+}
+
+.totalcaseHeader{
+    display: flex;
+}
+/* Scroll to top */
+
+.scrollTopDiv{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    scroll-behavior: smooth;
+    z-index: 1;
+
+    animation: fadeInAnimationScroll ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+
+}
+.scrollTopDiv>i{
+    color: white;
+    font-size: 40px;
+    background-color: #6C757D;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px 2px #caced3b2;
+}
+
+
+@keyframes fadeInAnimationScroll {
+    0% {
+        opacity: 0;
+        transform: translateY(+100%);
+        
+    }
+    100% {
+        opacity: 2;
+        transform: translateY(0);
+    
+     }
+}

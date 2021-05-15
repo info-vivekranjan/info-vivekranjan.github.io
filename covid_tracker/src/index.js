@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeContextProvider } from './context/ThemeContextProvider';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <ThemeContextProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ThemeContextProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

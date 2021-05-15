@@ -1,0 +1,177 @@
+.stateWiseCoronaCont{
+    margin-left: 80px;
+}
+
+.searchStateCont{
+    /* border: 1px solid black; */
+    background-image: linear-gradient(#00000083,#00000083),url("./img/background/corona-192.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size:cover;
+    border-bottom: 5px solid #b6b6b6;
+}
+.searchStateCont>div{
+    /* border: 1px solid white; */
+    padding-top: 180px;
+    
+}
+.searchStateCont>div>h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    /* border: 1px solid white; */
+    width: 50%;
+    margin: auto;
+}
+.searchStateCont>div>p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.inputStatewise{
+    width: 40%;
+    font-size: 25px;
+    padding: 14px 10px;
+    /* border-radius: 5px; */
+    border: 1px solid gray;
+    
+    outline: none;
+    color: gray;
+}
+button{
+
+    padding: 14px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: 1px solid rgb(65, 65, 65);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.wholeTableCont{
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 70px;
+    box-shadow: 1px 1px 6px 4px #c2c2c238;
+    padding: 10px;
+    transition: 0.4s;
+}
+.wholeTableCont:hover{
+    box-shadow: 1px 1px 6px 4px #adadad6e;
+}
+
+.allCountryData{
+    margin: 10px;
+    text-align: right;
+    width: 98%;
+    color: #6C757D;
+}
+.tableRowData{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: start;
+    border-radius: 5px;
+}
+
+
+td{
+    margin:5px ;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    width: 170px;
+    padding: 15px 10px;
+    background-color: #F6F6F7;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+td:hover{
+    background-color: #ebebebe0;
+}
+.tableHeader th{
+    margin: 5px;
+    height: 50px;
+    background-color: #F6F6F7;
+    border-radius: 5px;
+    width: 170px;
+    padding: 10px 10px;
+    padding-top: 25px;
+    margin-top: 0px;
+}
+/* .tableHeader th:hover{
+    background-color: #ebebebe0;
+} */
+
+
+
+.tableHeaderData{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: start;
+    border-radius: 5px;
+}
+
+.countryTD{
+    background-color: #F6F6F7;
+    font-weight: 600;
+    text-align: left;
+    font-size: 15px;
+}
+.tableHeaderData > .th1Statewise{
+    color: #ffffff; 
+    background-color: #6C0D77;
+}
+
+.tableHeaderData > .th2Statewise{
+    color: #ffffff; 
+    background-color: #FF073A;
+}
+.tableHeaderData > .th3Statewise{
+    color: #ffffff; 
+    background-color: #007BFF;
+}
+.tableHeaderData > .th4Statewise{
+    color: #ffffff; 
+    background-color: #28A745;
+}
+.tableHeaderData > .th5Statewise{
+    color: #ffffff; 
+    background-color: #6C757D;
+}
+
+.tableHeader{
+    width: 98%;
+    margin: 10px;
+    color: #6C757D;
+    position: sticky;
+    top: 0px;
+}
+
+/* td */
+
+
+.tableRowData > td:nth-child(1){
+    color: #6C0D77; 
+    /* background-color: #ffd1524f; */
+}
+
+.tableRowData > td:nth-child(2){
+    color: #FF073A; 
+    /* background-color: #ff759142; */
+}
+.tableRowData > td:nth-child(3){
+    color: #007BFF; 
+    /* background-color: #3874b450; */
+}
+.tableRowData > td:nth-child(4){
+    color: #28A745; 
+    /* background-color: #0bff4442; */
+}
+.tableRowData > td:nth-child(5){
+    color: #6C757D; 
+    /* background-color: #caced3b2; */
+}
