@@ -6,6 +6,7 @@ import { SingleCountryData } from './SingleCountryData';
 import covidLogo from "../covidimg.svg"
 import { useWindowScroll } from 'react-use';
 import { ThemeContext } from '../context/ThemeContextProvider';
+import { Footer } from './Footer/Footer';
 
 
 function CovidDetails() {
@@ -246,7 +247,7 @@ function CovidDetails() {
 
             }
 
-
+            <Footer />
 
         </div >
     )
