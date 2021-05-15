@@ -18,7 +18,7 @@ function Footer() {
                 <a href="https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/covid_tracker" target="_noblank" className={styles.githubCont}>
                     <i class="ri-github-line"></i>
                 </a>
-                <a href="#" target="_noblank" className={styles.dbCont}>
+                <a href="https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/covid_tracker#apis" target="_noblank" className={styles.dbCont}>
                     <i class="ri-database-2-line"></i>
                 </a>
                 <a href="https://t.me/covidTrackerOfficial" target="_noblank" className={styles.telegramCont}>

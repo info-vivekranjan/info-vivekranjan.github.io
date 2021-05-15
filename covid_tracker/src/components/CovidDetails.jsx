@@ -20,6 +20,8 @@ function CovidDetails() {
     const { y: pageYOffset } = useWindowScroll();
     const [isVisible, setIsVisible] = useState(false);
 
+    const [isVisibleBottom, setIsVisibleBottom] = useState(false);
+
 
     const { theme } = useContext(ThemeContext);
 
@@ -111,6 +113,23 @@ function CovidDetails() {
     }, [])
 
 
+    function handleScrollDown() {
+        window.scroll({
+            top: document.body.offsetHeight,
+            left: 0,
+            behavior: 'smooth',
+        });
+    }
+
+
+    useEffect(() => {
+        if (pageYOffset < 100) {
+            setIsVisibleBottom(true)
+        } else {
+            setIsVisibleBottom(false)
+        }
+    }, [pageYOffset])
+
     const handleKeypress = e => {
         //it triggers by pressing the enter key
         if (e.keyCode === 13) {
@@ -124,6 +143,14 @@ function CovidDetails() {
     return (
         <div className={styles.homePageCont}>
             <div ref={ref}></div>
+            {
+                isVisibleBottom &&
+                <div className={styles.scrollDownBtn}>
+                    <i onClick={handleScrollDown} className="ri-arrow-down-s-line"></i>
+                </div>
+            }
+
+
             <div className={styles.landingPage}>
 
 
