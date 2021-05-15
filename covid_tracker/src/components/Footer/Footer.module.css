@@ -30,6 +30,9 @@
     cursor: pointer;
 
 }
+.githubCont,.dbCont,.mailCont,.telegramCont,.twitterCont{
+    text-decoration: none;
+}
 .githubCont > i{
     color: gray;
 }

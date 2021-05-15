@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContextProvider';
+import { Footer } from '../Footer/Footer';
 import styles from './About.module.css'
 
 
@@ -40,6 +41,7 @@ function About() {
                 </div>
             </div>
 
+            <Footer />
 
         </div>
     );

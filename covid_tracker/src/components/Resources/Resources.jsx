@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../context/ThemeContextProvider';
+import { Footer } from '../Footer/Footer';
 import styles from './Resources.module.css'
 
 function ResourcesPage() {
@@ -62,9 +63,10 @@ useEffect(()=>{
         }
 
 
-            
                 
             </div>
+
+            <Footer/>
         </div>
     );
 }

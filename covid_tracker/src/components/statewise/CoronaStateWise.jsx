@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { FetchCoronaLive } from './FetchCoronaLive';
 import styles from './CoronaStateWise.module.css'
 import { ThemeContext } from '../../context/ThemeContextProvider';
+import { Footer } from '../Footer/Footer';
 
 
 
@@ -154,7 +155,7 @@ function CoronaStateWise() {
 
 
 
-
+            <Footer />
 
 
         </div>

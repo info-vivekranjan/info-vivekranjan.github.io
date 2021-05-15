@@ -15,21 +15,21 @@ function Footer() {
             <div className={styles.footerTitle} style={{ backgroundColor: theme.resourcesBG }}>COVID TRACKER</div>
             <div className={styles.footerPara} style={{ color: theme.textColor }}>I thank everyone fighting on the frontlines</div>
             <div className={styles.footerIconCont}>
-                <div className={styles.githubCont}>
+                <a href="https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/covid_tracker" target="_noblank" className={styles.githubCont}>
                     <i class="ri-github-line"></i>
-                </div>
-                <div className={styles.dbCont}>
+                </a>
+                <a href="#" target="_noblank" className={styles.dbCont}>
                     <i class="ri-database-2-line"></i>
-                </div>
-                <div className={styles.telegramCont}>
+                </a>
+                <a href="https://t.me/covidTrackerOfficial" target="_noblank" className={styles.telegramCont}>
                     <i class="ri-telegram-line"></i>
-                </div>
-                <div className={styles.twitterCont}>
+                </a>
+                <a href="#" target="_noblank" className={styles.twitterCont}>
                     <i class="ri-twitter-line"></i>
-                </div>
-                <div className={styles.mailCont}>
+                </a>
+                <a href="mailto:infovivek.ranjan@gmail.com" target="_noblank" className={styles.mailCont}>
                     <i class="ri-mail-line"></i>
-                </div>
+                </a>
             </div>
         </div>
     );

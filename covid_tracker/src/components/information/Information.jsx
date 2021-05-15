@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../Footer/Footer';
 import styles from './Information.module.css'
 
 
@@ -176,7 +177,7 @@ function CovidInformation() {
             </div>
 
 
-
+            <Footer />
 
         </div>
 
