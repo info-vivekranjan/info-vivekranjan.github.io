@@ -143,7 +143,31 @@ function CovidInformation() {
 
                     </div>
 
+                    <div className={styles.iframeDiv}>
+                        <p>How to wear masks - AIIMS, Delhi </p>
+                        <iframe src='https://www.youtube.com/embed/lsrFuZpUJRU'
+                            frameborder='0'
+                            allow='autoplay; encrypted-media'
+                            allowfullscreen
+                            title='video'
+                            style={{ width: "100%", height: "350px" }}
 
+                        />
+
+                    </div>
+
+                    <div className={styles.iframeDiv}>
+                        <p>COVID Appropriate Behaviour - AIIMS, Delhi </p>
+                        <iframe src='https://www.youtube.com/embed/-8VU_bpfHi8'
+                            frameborder='0'
+                            allow='autoplay; encrypted-media'
+                            allowfullscreen
+                            title='video'
+                            style={{ width: "100%", height: "350px" }}
+
+                        />
+
+                    </div>
 
 
                 </div>
