@@ -54,7 +54,7 @@ function Navbar() {
                                 {item.icon}
                             </div>
 
-                            <div className={styles.linkText}>{item.title}</div>
+                            <div className={styles.linkText} style={{ color: theme.textColor }}>{item.title}</div>
                         </Link>
 
                     </div>
