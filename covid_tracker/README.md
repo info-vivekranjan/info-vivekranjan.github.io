@@ -17,37 +17,37 @@
 
 #### Landing Page:
 - Light Mode
-![Landing Page light mode](./screenshots/Screenshot (267).png)
+![Landing Page light mode](./screenshots/Screenshot_267.png)
 - Dark Mode
-![Landing Page dark mode](./screenshots/Screenshot (273).png)
+![Landing Page dark mode](./screenshots/Screenshot_273.png)
 
 #### Country Search
 - Light Mode
-![Country Search Page light mode](./screenshots/Screenshot (268).png)
+![Country Search Page light mode](./screenshots/Screenshot_268.png)
 - Dark Mode
-![Country Search Page dark mode](./screenshots/Screenshot (274).png)
+![Country Search Page dark mode](./screenshots/Screenshot_274.png)
 
 #### Covid table data
  - Light Mode
-![Covid table light mode](./screenshots/Screenshot (269).png)
+![Covid table light mode](./screenshots/Screenshot_269.png)
 - Dark Mode
-![Covid table dark mode](./screenshots/Screenshot (275).png)
+![Covid table dark mode](./screenshots/Screenshot_275.png)
 
 
 #### State wise Covid data
 
 - Dark Mode
-![State wise Covid datadark mode](./screenshots/Screenshot (276).png)
+![State wise Covid datadark mode](./screenshots/Screenshot_276.png)
 
 ##### Searched state data
 - Dark Mode
-![Searched state dark mode](./screenshots/Screenshot (277).png)
+![Searched state dark mode](./screenshots/Screenshot_277.png)
 
 #### Information Page
  - Light Mode
-![Information Page light mode](./screenshots/Screenshot (272).png)
+![Information Page light mode](./screenshots/Screenshot_272.png)
 
 #### Resource Page
 
 - Dark Mode
-![Resource Page dark mode](./screenshots/Screenshot (278).png)
+![Resource Page dark mode](./screenshots/Screenshot_278.png)
