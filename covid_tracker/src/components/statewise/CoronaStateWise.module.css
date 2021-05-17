@@ -53,127 +53,55 @@ button{
 
 .wholeTableCont{
     width: 85%;
-    /* border: 1px solid red; */
+    /* border: 1px solid #DDDDDD; */
     margin: auto;
     margin-top: 70px;
-    box-shadow: 1px 1px 6px 4px #c2c2c238;
-    padding: 10px;
-    transition: 0.4s;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: auto;
 }
-.wholeTableCont:hover{
-    box-shadow: 1px 1px 6px 4px #adadad6e;
-}
-
-.allCountryData{
-    margin: 10px;
-    text-align: right;
-    width: 98%;
-    color: #6C757D;
-}
-.tableRowData{
-    display: flex;
-    /* border: 1px solid red; */
-    justify-content: start;
-    border-radius: 5px;
-}
-
-
-td{
-    margin:5px ;
-    /* border: 1px solid blue; */
-    border-radius: 5px;
-    width: 170px;
-    padding: 15px 10px;
-    background-color: #F6F6F7;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-td:hover{
-    background-color: #ebebebe0;
-}
-.tableHeader th{
-    margin: 5px;
-    height: 50px;
-    background-color: #F6F6F7;
-    border-radius: 5px;
-    width: 170px;
-    padding: 10px 10px;
-    padding-top: 25px;
-    margin-top: 0px;
-}
-/* .tableHeader th:hover{
-    background-color: #ebebebe0;
-} */
-
-
-
-.tableHeaderData{
-    display: flex;
-    /* border: 1px solid red; */
-    justify-content: start;
-    border-radius: 5px;
-}
-
-.countryTD{
-    background-color: #F6F6F7;
-    font-weight: 600;
-    text-align: left;
-    font-size: 15px;
-}
-.tableHeaderData > .th1Statewise{
-    color: #ffffff; 
-    background-color: #6C0D77;
-}
-
-.tableHeaderData > .th2Statewise{
-    color: #ffffff; 
-    background-color: #FF073A;
-}
-.tableHeaderData > .th3Statewise{
-    color: #ffffff; 
-    background-color: #007BFF;
-}
-.tableHeaderData > .th4Statewise{
-    color: #ffffff; 
-    background-color: #28A745;
-}
-.tableHeaderData > .th5Statewise{
-    color: #ffffff; 
-    background-color: #6C757D;
-}
-
 .tableHeader{
-    width: 98%;
-    margin: 10px;
+    /* border: 1px solid blue; */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    
+}
+.tableHeader2{
+    background-color: #EBEBEB;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    font-size: 18px;
+}
+.countryTD{
+    background-color: #EBEBEB;
+    color:  rgb(82, 82, 82);
+    font-weight: 600;
+    font-size: 18px;
+}
+.thStatewise{
+    width: 215px;
+    padding: 20px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+
+.tableRowData{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    transition: 400ms;
+    font-weight: 500;
     color: #6C757D;
-    position: sticky;
-    top: 0px;
+}
+.tableRowData:hover{
+    background-color: #DDDDDD;
 }
 
-/* td */
-
-
-.tableRowData > td:nth-child(1){
-    color: #6C0D77; 
-    /* background-color: #ffd1524f; */
-}
-
-.tableRowData > td:nth-child(2){
-    color: #FF073A; 
-    /* background-color: #ff759142; */
-}
-.tableRowData > td:nth-child(3){
-    color: #007BFF; 
-    /* background-color: #3874b450; */
-}
-.tableRowData > td:nth-child(4){
-    color: #28A745; 
-    /* background-color: #0bff4442; */
-}
-.tableRowData > td:nth-child(5){
-    color: #6C757D; 
-    /* background-color: #caced3b2; */
+.trStatewise{
+    width: 215px;
+    padding: 10px 0px;
+    border: 1px solid #DDDDDD;
 }
 
 
@@ -225,32 +153,15 @@ td:hover{
         font-size: 18px;
     }
     
-
-
-
-
     .wholeTableCont{
+        font-size: 15px;
+        border-radius: 3px;
+        display: grid;
+        grid-template-rows: auto;
         width: 100%;
-        /* border: 1px solid red; */
-        margin: auto;
-        margin-top: 70px;
-        box-shadow: 1px 1px 6px 4px #c2c2c238;
-        padding: 0px;
-        transition: 0.4s;
         overflow-x: auto;
+        margin: auto;
     }
     
-    
-    .tableRowData{
-        display: flex;
-        /* border: 1px solid red; */
-        justify-content: start;
-        border-radius: 5px;
-    }
-    
-    .tableHeader{
-        position:unset;
-        
-    }
     
 }

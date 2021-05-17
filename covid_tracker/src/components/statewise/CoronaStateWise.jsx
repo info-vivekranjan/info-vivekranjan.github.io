@@ -3,7 +3,7 @@ import { FetchCoronaLive } from './FetchCoronaLive';
 import styles from './CoronaStateWise.module.css'
 import { ThemeContext } from '../../context/ThemeContextProvider';
 import { Footer } from '../Footer/Footer';
-
+import cx from 'classnames';
 
 
 function CoronaStateWise() {
@@ -80,30 +80,30 @@ function CoronaStateWise() {
 
 
             <div className={styles.wholeTableCont}>
-                <div className={styles.tableHeader}>
-                    <tr className={styles.tableHeaderData}>
-                        <th className={styles.th1Statewise}>State</th>
-                        <th className={styles.th2Statewise} style={{ cursor: "pointer" }} onClick={() => setHighToLow(!highTolow)}>Total Cases</th>
-                        <th className={styles.th3Statewise}>Total Active</th>
-                        <th className={styles.th4Statewise}>Total Recovered</th>
-                        <th className={styles.th5Statewise}>Total Deaths</th>
-                    </tr>
+                <div className={cx(styles.tableHeader, styles.tableHeader2)} style={{ backgroundColor: theme.covidtableHeaderBG, border: theme.tableBorder }}>
+
+                    <div className={styles.thStatewise} style={{ border: theme.tableBorder, color: theme.textColor }}  >State</div>
+                    <div className={styles.thStatewise} style={{ border: theme.tableBorder, color: theme.textColor, cursor: "pointer" }} onClick={() => setHighToLow(!highTolow)}>Total Cases</div>
+                    <div className={styles.thStatewise} style={{ border: theme.tableBorder, color: theme.textColor }} >Total Active</div>
+                    <div className={styles.thStatewise} style={{ border: theme.tableBorder, color: theme.textColor }} >Total Recovered</div>
+                    <div className={styles.thStatewise} style={{ border: theme.tableBorder, color: theme.textColor }} >Total Deaths</div>
+
                 </div>
 
                 <div>
                     {
                         data.sort((a, b) => highTolow ? b.Confirmed - a.Confirmed : a.Confirmed - b.Confirmed)
                             .map((item) => {
-                                return <div className={styles.allCountryData} >
+                                return <div className={cx(styles.allCountryData, styles.tableHeader)} >
                                     {
                                         (item.Date).includes(todayDateSum) && //for filtering latest data
-                                        <tr className={styles.tableRowData}>
+                                        <div className={styles.tableRowData}>
 
-                                            <td style={{ backgroundColor: theme.statewiseBG }} className={styles.countryTD}>
+                                            <div className={cx(styles.trStatewise, styles.countryTD)} style={{ border: theme.tableBorder, color: theme.textColor, backgroundColor: theme.covidtableHeaderBG }}>
                                                 {item.Province}
-                                            </td>
+                                            </div>
 
-                                            <td style={{ backgroundColor: theme.statewiseBG }}>
+                                            <div className={styles.trStatewise} style={{ border: theme.tableBorder, color: "#FF073A" }}>
 
                                                 {
                                                     Number(parseFloat(item.Confirmed).toFixed(2)).toLocaleString('en', {
@@ -111,9 +111,9 @@ function CoronaStateWise() {
                                                     })
                                                 }
 
-                                            </td>
+                                            </div>
 
-                                            <td style={{ backgroundColor: theme.statewiseBG }}>
+                                            <div className={styles.trStatewise} style={{ border: theme.tableBorder, color: "#007BFF" }}>
 
                                                 {
                                                     Number(parseFloat(item.Active).toFixed(2)).toLocaleString('en', {
@@ -121,9 +121,9 @@ function CoronaStateWise() {
                                                     })
                                                 }
 
-                                            </td>
+                                            </div>
 
-                                            <td style={{ backgroundColor: theme.statewiseBG }}>
+                                            <div className={styles.trStatewise} style={{ border: theme.tableBorder, color: "#28A745" }}>
 
                                                 {
                                                     Number(parseFloat(item.Recovered).toFixed(2)).toLocaleString('en', {
@@ -131,9 +131,9 @@ function CoronaStateWise() {
                                                     })
                                                 }
 
-                                            </td>
+                                            </div>
 
-                                            <td style={{ backgroundColor: theme.statewiseBG }}>
+                                            <div className={styles.trStatewise} style={{ border: theme.tableBorder, color: "#6C757D" }}>
 
                                                 {
                                                     Number(parseFloat(item.Deaths).toFixed(2)).toLocaleString('en', {
@@ -141,11 +141,11 @@ function CoronaStateWise() {
                                                     })
                                                 }
 
-                                            </td>
+                                            </div>
 
 
 
-                                        </tr>
+                                        </div>
                                     }
                                 </div>
                             })
