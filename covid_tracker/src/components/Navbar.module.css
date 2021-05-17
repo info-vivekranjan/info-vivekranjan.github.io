@@ -100,3 +100,31 @@
     color: rgb(255, 217, 0);
     cursor: pointer;
 }
+
+
+/* Media Query */
+
+@media only screen and (max-width: 600px){
+    .navbarCont{
+        display: flex;
+        bottom: 0;
+        width: 100vw;
+        height: 80px;
+        background-color: #F6F6F7;
+        transition:none;
+        flex-direction: row;
+    }
+    .covidLogoCont .covidLogo{
+        display: none;
+    }
+    .navbarCont:hover{
+        width: 100vw;
+    }
+    .navbarCont:hover .linkText{
+        display: none;
+    }
+    .navLink .navIcon{
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+}

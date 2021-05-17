@@ -69,7 +69,6 @@
     /* border: 1px solid red; */
     display: flex;
     padding: 5px;
-    
     width: 80%;
     margin: auto;
     margin-bottom: 100px;
@@ -84,7 +83,7 @@
 @keyframes fadeInAnimationX {
     0% {
         opacity: 0;
-        transform: translate(-30px);
+        transform: translateX(-30px);
         
     }
     100% {
@@ -411,4 +410,182 @@
         transform: translateY(0);
     
      }
+}
+
+
+
+/* Media Query */
+
+
+@media only screen and (max-width: 600px){
+    .homePageCont{
+        margin-left: 0px;
+        margin-right: 10px;
+        padding: 0;
+        
+        
+    }
+    .allDataCont{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+    }
+
+    .allConfirmed{
+        /* border: 1px solid black; */
+       
+        width: 80%;
+        font-size: 22px;
+       
+        margin: auto;
+    }
+    
+    .allActive{
+        /* border: 1px solid blue; */
+        width: 80%;
+        font-size: 22px;
+        
+        margin: auto;
+    }
+    
+    .allRecovered{
+        /* border: 1px solid rgb(238, 44, 76); */
+        width: 80%;
+        font-size: 22px;
+        
+        margin: auto;
+    }
+    
+    .allDeceased{
+        /* border: 1px solid blue; */
+        
+        width: 80%;
+        font-size: 22px;
+        
+        margin: auto;
+    }
+    
+
+    
+.wholeInputCont{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.inputCont{
+    width: 100%;
+    padding: 4px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.searchCountry{
+    width: 90%;
+    font-size: 15px;
+    padding: 15px 5px;
+
+}
+
+
+.singleCountry{
+    /* border: 1px solid black; */
+
+    width: 100%;
+    transition: 0.5s;
+    margin: auto;
+    font-size: 22px;
+}
+
+.singleConfirmed{
+    /* border: 1px solid black; */
+  
+    width: 100%;
+    transition: 0.5s;
+    margin: auto;
+    font-size: 22px;
+}
+
+.singleActive{
+    /* border: 1px solid blue; */
+    width: 100%;
+    transition: 0.5s;
+    margin: auto;
+    font-size: 22px;
+}
+
+.singleRecovered{
+    /* border: 1px solid rgb(238, 44, 76); */
+    width: 100%;
+    transition: 0.5s;
+    margin: auto;
+    font-size: 22px;
+}
+
+.singleDeceased{
+    /* border: 1px solid blue; */
+    width: 100%;
+    transition: 0.5s;
+    margin: auto;
+    font-size: 22px;
+}
+
+
+
+.fetchedDataCont{
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.fetchedData{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+.singleDataCont{
+    display: grid;
+    padding: 15px;
+    
+    width: 70%;
+    margin: auto;
+
+
+}
+
+.allTableCont{
+    /* border: 1px solid rgb(94, 91, 91); */
+    font-size: 15px;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: auto;
+    width: 100%;
+    overflow-x: auto;
+    margin: auto;
+    color: #6C757D;
+    text-align: right;
+}
+
+
+
+
+.scrollTopDiv{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 60px;
+    margin-right: 15px;
+    scroll-behavior: smooth;
+    z-index: 1;
+
+    animation: fadeInAnimationScroll ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+
+}
+
 }

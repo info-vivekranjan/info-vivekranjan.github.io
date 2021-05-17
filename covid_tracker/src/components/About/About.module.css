@@ -17,3 +17,15 @@
     color: #007BFF;
     text-align: left;
 }
+
+@media only screen and (max-width: 600px){
+ 
+    .aboutPageCont{
+        width: 95%;
+        margin:0 auto;
+    }
+    .aboutQA{
+        padding: 10px;
+    }
+    
+}

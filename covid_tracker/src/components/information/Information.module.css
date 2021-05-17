@@ -59,3 +59,40 @@
     font-weight: 500;
     color: rgb(114, 114, 114);
 }
+
+@media only screen and (max-width: 600px){
+ 
+    
+    .wholeInfoCont{
+        margin:0px;
+    }
+    
+    .blogCont{
+        width: 95%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .singleBlogDiv{
+        
+        width: 80%;
+        margin: 20px auto;
+        
+    } 
+    
+    
+    .ytVideoCont{
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    
+    
+    .iframeDiv{
+        width: 80%;
+        margin: 20px auto;
+        
+    }
+
+}

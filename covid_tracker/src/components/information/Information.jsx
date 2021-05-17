@@ -19,28 +19,28 @@ function CovidInformation() {
 
                 <div className={styles.blogCont}>
 
-                    <a href="https://cleartax.in/s/covid-19-diagnosis-and-management-guide" className={styles.singleBlogDiv}>
+                    <a href="https://cleartax.in/s/covid-19-diagnosis-and-management-guide" target="_noblank" className={styles.singleBlogDiv}>
 
                         <p style={{ color: "#6C757D" }}> Covid-19 FAQ</p>
 
                         <img src="https://assets1.cleartax-cdn.com/s/img/2021/04/28135347/Screenshot-2021-04-28-at-12.56.27-PM-1024x859.png" alt='covid-19-blog1' style={{ width: "100%", height: "300px" }} />
                     </a>
 
-                    <a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/questions-and-answers.html" className={styles.singleBlogDiv}>
+                    <a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/questions-and-answers.html" target="_noblank" className={styles.singleBlogDiv}>
 
                         <p> Covid-19 QA about Vaccination</p>
 
                         <img src="https://www.mohfw.gov.in/covid_vaccination/vaccination/dist/images/qna/qna-2.jpg" alt='covid-19-blog2' style={{ width: "100%", height: "300px" }} />
                     </a>
 
-                    <a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/common-side-effects-aefi.html" className={styles.singleBlogDiv}>
+                    <a href="https://www.mohfw.gov.in/covid_vaccination/vaccination/common-side-effects-aefi.html" target="_noblank" className={styles.singleBlogDiv}>
 
                         <p> Common side-effects of vaccination</p>
 
                         <img src="https://www.mohfw.gov.in/covid_vaccination/vaccination/dist/images/vaccine-infographic-desktop.jpg" alt='covid-19-blog3' style={{ width: "100%", height: "300px" }} />
                     </a>
 
-                    <a href="https://www.bbc.com/news/world-asia-india-55748124" className={styles.singleBlogDiv}>
+                    <a href="https://www.bbc.com/news/world-asia-india-55748124" target="_noblank" className={styles.singleBlogDiv}>
 
                         <p> What we know about India's Covid-19 vaccines</p>
 

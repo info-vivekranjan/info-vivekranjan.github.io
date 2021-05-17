@@ -175,3 +175,82 @@ td:hover{
     color: #6C757D; 
     /* background-color: #caced3b2; */
 }
+
+
+/* Media Query */
+
+@media only screen and (max-width: 600px){
+    .stateWiseCoronaCont{
+        margin-left: 0px;
+
+    }
+
+    .searchStateCont{
+        /* border: 1px solid black; */
+        background-image: linear-gradient(#00000083,#00000083),url("./img/background/corona-192.jpg");
+        width: 100%;
+        height: 80vh;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size:cover;
+        border-bottom: 5px solid #b6b6b6;
+    }
+
+
+    .searchStateCont>div{
+        /* border: 1px solid white; */
+        padding-top: 90px;
+        
+    }
+    .searchStateCont>div>h2{
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+        /* border: 1px solid white; */
+        width: 100%;
+        margin: auto;
+    }
+    
+    
+    .inputStatewise{
+        width: 70%;
+        font-size: 18px;
+        padding: 14px 10px;
+        /* border-radius: 5px; */
+        
+    }
+    button{
+    
+        padding: 14px 10px;
+        font-size: 18px;
+    }
+    
+
+
+
+
+    .wholeTableCont{
+        width: 100%;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 70px;
+        box-shadow: 1px 1px 6px 4px #c2c2c238;
+        padding: 0px;
+        transition: 0.4s;
+        overflow-x: auto;
+    }
+    
+    
+    .tableRowData{
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: start;
+        border-radius: 5px;
+    }
+    
+    .tableHeader{
+        position:unset;
+        
+    }
+    
+}
