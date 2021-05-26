@@ -150,6 +150,15 @@ async function checkWeather() {
         sky_nature_para.innerHTML = "Mostly cloudy"
         sky_div.append(sky_nature_para)
     }
+    else if (sky_nature == 'heavy intensity rain') {
+        let sky_img = document.createElement('img');
+        sky_img.src = "./img/rain_heavy.png";
+        sky_div.append(sky_img)
+
+        let sky_nature_para = document.createElement('p')
+        sky_nature_para.innerHTML = "Heavy Rainfall"
+        sky_div.append(sky_nature_para)
+    }
 
 
     var temp_div = document.getElementById('temp-header')
