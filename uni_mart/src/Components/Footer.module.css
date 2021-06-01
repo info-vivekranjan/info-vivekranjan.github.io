@@ -1,0 +1,69 @@
+
+.footerCont{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 35vh;
+    background-color: rgb(226, 226, 226);
+    margin-top:50px ;
+    padding-bottom: 70px;
+}
+.footerTitle{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    background: #008ECC;
+    width: fit-content;
+    padding: 5px;
+    margin: auto;
+}
+.footerPara{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(78, 78, 78);
+    margin-top: 20px;
+}
+
+.footerIconCont{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.githubCont > i,.dbCont > i,.telegramCont >i ,.twitterCont > i ,.mailCont > i{
+    font-size: 2.5rem;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.githubCont,.dbCont,.mailCont,.telegramCont,.twitterCont{
+    text-decoration: none;
+}
+.githubCont > i{
+    color: #e4415185;
+}
+.githubCont > i:hover{
+    color: #E44151
+}
+.dbCont > i{
+    color: #65769b;
+}
+.dbCont > i:hover{
+    color: #4867AA;
+}
+.telegramCont > i{
+    color: #2990ffbe;
+}
+.telegramCont > i:hover{
+    color: #007bff;
+}
+.twitterCont{
+    color: #94ACF7;
+}
+.twitterCont > i:hover{
+    color: #4270fd;
+}
+.mailCont > i{
+    color: #C19969;
+}
+.mailCont > i:hover{
+    color: #cc8e43;
+}

@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+
+.alice-carousel__next-btn,.alice-carousel__prev-btn{
+  
+  font-size: 0px;
+  font-weight:100;
+  text-align: left;
+  
+}

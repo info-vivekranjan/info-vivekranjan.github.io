@@ -1,0 +1,153 @@
+.fruitsvegsDivCont{
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+
+.FruitsAndVegsDataCont{
+    /* border: 1px solid red; */
+    margin: 20px auto;
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fruitsvegsLink{
+    text-decoration: none;
+   
+}
+
+.singleFruits{
+    border: 1px solid gray;
+    margin: 15px;
+    border-radius: 10px;
+    width: 25%;
+    padding: 5px;
+    
+}
+.fruitsvegsImg > img{
+    width: 150px;
+}
+
+.fruitsvegsName{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    height: 80px;
+}
+
+
+.eachPagetitleImage > img{
+    width: 100%;
+    
+}
+.offeronEachProd{
+    display: flex;
+    justify-content: flex-start;
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 5px;
+}
+
+/* FruitsAndVegsPage */
+
+
+.fruitsvegsPage{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 80px;
+}
+.fruitsvegsPageCont{
+    box-shadow: 1px 1px 6px 4px rgb(224, 224, 224);
+    display: flex;
+    padding: 20px;
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 400ms;
+}
+.fruitsvegsPageCont:hover{
+    box-shadow: 1px 1px 6px 4px rgb(190, 190, 190);
+}
+.fruitsvegsPageLeft{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.fruitsvegsPageRight{
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+}
+.fruitsvegsPageName{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px;
+    margin-top: 0;
+}
+.fruitsvegsPageCost{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 15px;
+    text-decoration: line-through;
+}
+.description{
+    margin: 15px ;
+    margin-top: 40px;
+    /* border: 1px solid black; */
+    line-height: 30px;
+}
+.addtoCart{
+    margin: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    background-color: #008ECC;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.addtoCart:hover{
+    background-color: #008fcc9d;
+}
+
+
+/* Loader */
+
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid blue;
+    border-bottom: 8px solid blue;
+    border-right: 8px solid blue;
+    width: 50px;
+    height: 50px;
+    margin: 150px auto;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* increaseCount and decreaseCount button */
+
+  .count {
+      background-color: #008ECC;
+      color: white;
+      padding: 5px;
+      border-radius: 50%;
+      margin-right: 5px;
+      width: 28px;
+  }
+ 

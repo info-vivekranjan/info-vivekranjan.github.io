@@ -1,0 +1,37 @@
+.loginPageCont{
+    margin-top: 70px;
+    min-height: 90vh;
+    background-color: #F6F6F7;
+}
+.formData{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+.formData div img{
+    border-radius: 10px;
+}
+.formData form{
+    margin-right: 100px;
+}
+.formData form input{
+    width: 400px;
+    padding: 10px 20px;
+    border: 1px solid silver;
+    color: gray;
+    border-radius: 4px;
+    outline-color: silver;
+}
+.formData form input[type=submit]{
+    background-color: #008ECC;
+    width: 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+
+}

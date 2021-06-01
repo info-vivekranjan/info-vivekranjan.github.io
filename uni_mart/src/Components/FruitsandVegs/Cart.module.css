@@ -1,0 +1,80 @@
+.wholeCartCont{
+    display: flex;
+}
+
+.subTotalCont{
+    /* border: 1px solid red; */
+    max-height: 30vh;
+    width: 30%;
+    margin-right: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.cartCont{
+    /* border: 1px solid silver; */
+    width: 80%;
+    margin: 0px 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.topCartTable{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cartHeader{
+    display: flex;
+      
+}
+.cartImg {
+    width: 200px;
+}
+
+.cartHeader .cartTextCont{
+    width: 100%;
+    text-align: left;
+}
+.cartCostCont{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.cartCostCont div{
+    margin: 10px 50px;
+}
+.cartCostCont div:nth-child(4){
+    color: rgb(67, 192, 17);
+    font-weight: 500;
+}
+.cartCostCont div:nth-child(3){
+    text-decoration: line-through;
+    color: gray;
+}
+.cartCostCont .deleteBtn{
+    width: fit-content;
+    border: none;
+    outline: none;
+    color: #008ECC;
+    height: fit-content;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.cartCostCont .deleteBtn:hover{
+    text-decoration: underline;
+}
+.cartTitle{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cartTitle div{
+    margin: 5px 50px;
+}
