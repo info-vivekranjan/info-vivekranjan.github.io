@@ -1,0 +1,118 @@
+.firstRowCont{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes fadeUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+
+.secondRowCont{
+
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+
+.eachLogoCont{
+    max-width: 6rem;
+    max-height: 10rem;
+    
+
+    
+}
+
+.eachLogoCont img{
+    width: 4em;
+    
+}
+
+.eachLogoCont >div{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .firstRowCont{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 20px auto;
+        flex-wrap: wrap;        
+
+    
+    }
+  
+    
+    .secondRowCont{
+
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 20px auto;
+        flex-wrap: wrap;        
+    
+    }
+
+
+    .eachLogoCont{
+        max-width: 6rem;
+        max-height: 10rem;
+        
+    margin: 15px 7px ;
+        
+    }
+    
+    .eachLogoCont img{
+        width: 4em;
+        
+    }
+    
+    .eachLogoCont >div{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+
+} 

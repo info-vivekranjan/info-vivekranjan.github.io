@@ -1,0 +1,278 @@
+.HomePageCont{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(140deg,rgb(0, 45, 82),rgb(24, 105, 72));
+    position: relative;
+
+}
+
+
+
+.particalCont{
+    position: absolute;
+    width: 100%; 
+}
+
+
+
+
+.mainPageContent{
+    display: flex;
+    position: absolute;
+    color: white; 
+    width: 100%;
+
+}
+
+
+
+.dpImgCont{
+    width: 30%;
+    text-align: right;
+    margin-right: 6%;
+    animation: fadeSideAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeSideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-140px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    
+     }
+}
+
+
+.dpImgCont>img{
+    width: 50%;
+    padding-top: 200px; 
+
+}
+
+
+.rightSidetextCont{
+    width: 50%;
+}
+
+.sayingHey{
+    font-size: 140px;
+    text-align: left;
+    font-weight: 700; 
+    padding-top: 30px;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(+40px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+
+.nameIntro{
+    font-size: 65px; 
+    text-align: left; 
+    margin-top: 0; 
+    font-weight: 700 ;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+.paraIntro{
+    font-size: 27px; 
+    text-align: left; 
+    margin-top: 20px; 
+    font-weight: 500;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+.btnCont{
+    margin-top: 40px;
+    text-align: left;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+
+
+.homePageThreeBtn{
+
+    border: 3px solid white;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.homePageThreeBtn:hover{
+    background-color: white;
+    color: rgb(0, 45, 82);
+    transition: 800ms;
+
+}
+
+
+.arrowDownCont{
+    text-align: left;
+    margin-left: 30%;
+    margin-top: 37px;
+    animation: fadeDownAnimation ease 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeDownAnimation {
+    0% {
+        opacity: 1;
+        transform: translateY(-15px);
+        
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    
+     }
+}
+
+.arrowDownCont>i{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+
+
+/* Media Queries for mobile screen */
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+    .mainPageContent{
+        display: grid;
+        position: absolute;
+        color: white; 
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    
+
+    .dpImgCont{
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+        animation: fadeUpAnimation ease 1s;
+        animation-iteration-count:1;
+        animation-fill-mode:forwards;
+
+    }
+    .dpImgCont>img{
+        width: 30%;
+        padding-top: 30px; 
+    
+    }
+
+    
+.rightSidetextCont{
+    width: 100%;
+}
+
+.sayingHey{
+    font-size: 70px;
+    text-align: left;
+    font-weight: 700; 
+    padding-top: 20px;
+    margin-left: 5%;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+    
+
+
+.nameIntro{
+    font-size: 35px; 
+    text-align: center; 
+    margin-top: 0; 
+    font-weight: 600 ;
+
+}
+
+.paraIntro{
+    font-size: 20px; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-weight: 400;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.btnCont{
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+
+
+
+.homePageThreeBtn{
+
+    border: 2px solid white;
+    padding: 7px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    margin: 8px;
+    cursor: pointer;
+
+}
+
+
+.arrowDownCont{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 37px;
+
+}
+
+
+}
