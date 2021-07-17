@@ -5,7 +5,11 @@ function GitHub() {
 
     return (
         <div>
-            <h1 style={{ fontSize: "40px", color: "#262626" }}>Github Contributions</h1>
+
+            <div className={styles.titleHeader} data-aos="fade-right">Github Contributions</div>
+            <div className={styles.line} data-aos="fade-left"></div>
+
+
             <div className={styles.githubStatsCont}>
 
                 <div className={styles.githubStats}>

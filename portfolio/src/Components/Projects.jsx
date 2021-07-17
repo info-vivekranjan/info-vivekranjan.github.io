@@ -3,6 +3,13 @@ import React from 'react';
 import { data } from '../data/projects.js';
 import styles from './Css/Projects.module.css';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
+
 function Projects() {
 
 
@@ -10,14 +17,15 @@ function Projects() {
 
     return (
         <div className={styles.projectContainer}>
-            <h1 style={{ fontSize: "40px", color: "#262626" }}>Projects</h1>
+            <div className={styles.titleHeader} data-aos="fade-right">Projects</div>
+            <div className={styles.line} data-aos="fade-left"></div>
 
 
             <div className={styles.mainProjectCont} >
 
                 {
                     data.map((item) => {
-                        return <div className={styles.eachProjectCont}>
+                        return <div className={styles.eachProjectCont} data-aos="zoom-in-up">
 
                             <div className={styles.eachProjectImg}>
                                 <img src={item.img} alt={item.alt} />

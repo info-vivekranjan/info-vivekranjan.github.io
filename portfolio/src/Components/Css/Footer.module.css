@@ -41,6 +41,22 @@ a{
 }
 
 
+.titleHeader{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.line{
+    border: 1px solid white;
+    width: 10em;
+    margin: 0px auto;
+    padding: 2px 1px;
+    background-color: white;
+    margin-top: 10px;
+}
+
 
 @media only screen and (max-width: 500px) {
 

@@ -5,7 +5,11 @@ import styles from './Css/Footer.module.css';
 function Footer() {
     return (
         <div className={styles.footerCont}>
-            <h1>Get in Touch</h1>
+
+            <div className={styles.titleHeader} data-aos="fade-right">Get In Touch</div>
+            <div className={styles.line} data-aos="fade-left"></div>
+
+
             <div className={styles.socialMediaLinks}>
                 <a href="https://www.linkedin.com/in/vivek0003/" target="_blank">
                     <i className="ri-linkedin-box-fill"></i>

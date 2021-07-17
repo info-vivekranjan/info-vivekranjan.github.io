@@ -57,7 +57,7 @@ export const data = [
         "alt": "CRUD Todo App",
         "heading": "CRUD Todo App",
         "description": "Todo app with a couple of features like, A user can add, edit, toggle the status and delete a pericular task from the todo list.",
-        "demo": "https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/CRUD_Todo_App",
+        "demo": "https://todos-crud.netlify.app/",
         "github": "https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/CRUD_Todo_App",
         "techStack": {
             "tech1": htmlLogo,

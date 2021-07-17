@@ -9,6 +9,12 @@ import { Footer } from './Footer';
 import { SkillSet } from './SkillSet';
 import { GitHub } from './GitHub';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
 
 const openResume = () => {
     window.open("https://drive.google.com/file/d/1sZEiO7hfMPm_Dz9qR_SsCiRiksAGvOyE/view?usp=sharing", "_blank");
