@@ -55,7 +55,7 @@ function HomePage() {
         <>
             <div className={styles.HomePageCont}>
                 <div className={styles.particalCont}>
-                    <Particles height="115vh" width="100%" params={particles}></Particles>
+                    <Particles height="105vh" width="100%" params={particles}></Particles>
 
                 </div>
 

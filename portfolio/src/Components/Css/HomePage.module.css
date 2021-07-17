@@ -1,6 +1,6 @@
 .HomePageCont{
     width: 100%;
-    height: 110vh;
+    height: 105vh;
     background-image: linear-gradient(140deg,rgb(0, 45, 82),rgb(24, 105, 72));
     position: relative;
 
@@ -12,8 +12,6 @@
     position: absolute;
     width: 100%; 
 }
-
-
 
 
 .mainPageContent{

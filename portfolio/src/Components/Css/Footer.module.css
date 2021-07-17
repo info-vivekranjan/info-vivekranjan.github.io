@@ -3,11 +3,6 @@
     height: 50vh;
     background: linear-gradient(140deg,rgb(0, 45, 82),rgb(24, 105, 72));;
 }
-.footerCont>h1{
-    color: white;
-    font-size: 35px;
-    padding-top: 2rem;
-}
 
 .socialMediaLinks{
     margin-top: 4rem;
@@ -59,13 +54,6 @@ a{
 
 
 @media only screen and (max-width: 500px) {
-
-
-    .footerCont>h1{
-        color: white;
-        font-size: 30px;
-        padding-top: 2rem;
-    }
     
     .socialMediaLinks{
         margin-top: 2rem;
