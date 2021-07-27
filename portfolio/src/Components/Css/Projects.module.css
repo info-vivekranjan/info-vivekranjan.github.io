@@ -16,10 +16,14 @@
 
 .eachProjectCont{
     width: 28%;
-    border: 1px solid rgba(192, 192, 192, 0.63);
+    /* border: 1px solid rgba(192, 192, 192, 0.63); */
     margin: 1.5rem;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content :space-between;
+
 }
 .eachProjectCont:hover{
     

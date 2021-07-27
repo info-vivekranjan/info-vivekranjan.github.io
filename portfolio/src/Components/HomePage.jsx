@@ -10,14 +10,13 @@ import { SkillSet } from './SkillSet';
 import { GitHub } from './GitHub';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 
 
 const openResume = () => {
-    window.open("https://drive.google.com/file/d/1sZEiO7hfMPm_Dz9qR_SsCiRiksAGvOyE/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1LqAYM2LHSV4JNgCvaWFgfQVrJ82B9uSL/view?usp=sharing", "_blank");
 
 }
 
@@ -75,7 +74,7 @@ function HomePage() {
                             Hey,
                         </div>
 
-                        <div className={styles.nameIntro}>I'm Vivek Ranjan.</div>
+                        <div className={styles.nameIntro}>I'm <span className={styles.bigIntroName}>Vivek Ranjan.</span></div>
                         <div className={styles.paraIntro}>
                             An aspiring full stack web developer proficient in MERN stack. If you are looking for a curious, acountable and adaptible team player. Then, I'm the one for the job.
                         </div>

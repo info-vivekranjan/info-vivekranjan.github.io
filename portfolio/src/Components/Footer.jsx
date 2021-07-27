@@ -12,14 +12,14 @@ function Footer() {
 
             <div className={styles.socialMediaLinks}>
                 <a href="https://www.linkedin.com/in/vivek0003/" target="_blank">
-                    <i className="ri-linkedin-box-fill"></i>
+                    <i style={{ color: "#0B66C3" }} className="ri-linkedin-box-fill"></i>
                 </a>
                 <a href="https://github.com/info-vivekranjan" target="_blank">
-                    <i className="ri-github-fill"></i>
+                    <i style={{ color: "black" }} className="ri-github-fill"></i>
                 </a>
 
                 <a href="https://twitter.com/vivekranjan0003" target="_blank">
-                    <i className="ri-twitter-fill"></i>
+                    <i style={{ color: "#1DA1F2" }} className="ri-twitter-fill"></i>
                 </a>
 
             </div>

@@ -56,10 +56,11 @@
 
 .rightSidetextCont{
     width: 50%;
+    padding-top: 5%;
 }
 
 .sayingHey{
-    font-size: 140px;
+    font-size: 65px;
     text-align: left;
     font-weight: 700; 
     padding-top: 30px;
@@ -83,7 +84,17 @@
 
 
 .nameIntro{
-    font-size: 65px; 
+    font-size: 40px; 
+    text-align: left; 
+    margin-top: 0; 
+    font-weight: 700 ;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+}
+
+.bigIntroName{
+    font-size: 90px; 
     text-align: left; 
     margin-top: 0; 
     font-weight: 700 ;
