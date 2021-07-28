@@ -5,7 +5,7 @@
 
 ## Link for the app
 
-* https://todos-crud.netlify.app/
+* https://unimart-demo.netlify.app/
 
 
 
@@ -42,8 +42,6 @@
   * JavaScript
   * Libraries used
       
-      * material-ui/core
-      * material-ui/icons
       * React-dom
       * react-scripts
       * React-router-dom
