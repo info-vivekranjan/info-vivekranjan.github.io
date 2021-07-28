@@ -31,14 +31,16 @@ function Footer() {
                         Jamshedpur
                     </i>
                 </a>
-                <a href="mailto:vivek0003@hotmail.com" target="_blank">
-                    <i class="ri-mail-open-fill">
-                        vivek0003@hotmail.com
-                    </i>
-                </a>
+
                 <a href="tel:+919156022914">
                     <i class="ri-phone-fill">
                         9156022914
+                    </i>
+                </a>
+
+                <a href="mailto:vivek0003@hotmail.com" target="_blank">
+                    <i class="ri-mail-open-fill">
+                        vivek0003@hotmail.com
                     </i>
                 </a>
             </div>

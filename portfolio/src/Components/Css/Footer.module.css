@@ -1,7 +1,8 @@
 .footerCont{
     width: 100%;
-    height: 50vh;
-    background: linear-gradient(140deg,rgb(0, 45, 82),rgb(24, 105, 72));;
+    /* height: 50vh; */
+    background: linear-gradient(140deg,rgb(0, 45, 82),rgb(24, 105, 72));
+    padding-bottom: 15px;
 }
 
 .socialMediaLinks{
