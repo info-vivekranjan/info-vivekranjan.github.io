@@ -31,10 +31,10 @@
 ## Screenshots
 
 - Landing Page
-![Landing Page](./screenshots/todo.png)
+![Landing Page](./screenshots/Screenshot.png)
 
 - Edit Page
-![Edit Page](./screenshots/todo_2.png)
+![Edit Page](./screenshots/Screenshot_2.png)
 
 
 ## Technologies used
