@@ -12,7 +12,7 @@
 ## Screenshots
 
 * Landing Page
-![Landing Page](./src/screenshots/uniMart.png)
+![Landing Page](screenshots/uniMart.png)
 
 
 # Steps to install the project:
