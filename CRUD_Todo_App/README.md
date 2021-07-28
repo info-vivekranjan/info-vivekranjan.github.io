@@ -31,10 +31,10 @@
 ## Screenshots
 
 
-* Landing Page
+#### Landing Page
 ![Landing Page light mode](./screenshots/todo.png)
 
-* Edit Page
+#### Edit Page
 ![Landing Page light mode](./screenshots/todo_2.png)
 
 
