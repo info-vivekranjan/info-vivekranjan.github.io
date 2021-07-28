@@ -30,12 +30,11 @@
 
 ## Screenshots
 
+- Landing Page
+![Landing Page](./screenshots/todo.png)
 
-#### Landing Page
-![Landing Page light mode](./screenshots/todo.png)
-
-#### Edit Page
-![Landing Page light mode](./screenshots/todo_2.png)
+- Edit Page
+![Edit Page](./screenshots/todo_2.png)
 
 
 ## Technologies used
