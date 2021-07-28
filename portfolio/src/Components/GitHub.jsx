@@ -38,7 +38,7 @@ function GitHub() {
                     of coding
                 </div>
                 <div className={styles.codingDetails}>
-                    350+
+                    400+
                     <br />
                     Git
                     <br />
