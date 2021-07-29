@@ -18,7 +18,7 @@ function GitHub() {
                         showTotalCount={false}
                         blockSize={17}
                         blockMargin={3}
-                        color="rgb(21, 255, 0)"
+                        color="rgb(0, 238, 0)"
 
                     />
 
