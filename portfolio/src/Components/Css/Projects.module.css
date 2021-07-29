@@ -23,6 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content :space-between;
+    padding-bottom: 17px;
 
 }
 .eachProjectCont:hover{

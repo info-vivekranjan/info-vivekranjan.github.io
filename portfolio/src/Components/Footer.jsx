@@ -12,14 +12,14 @@ function Footer() {
 
             <div className={styles.socialMediaLinks}>
                 <a href="https://www.linkedin.com/in/vivek0003/" target="_blank">
-                    <i style={{ color: "#0B66C3" }} className="ri-linkedin-box-fill"></i>
+                    <i className="ri-linkedin-box-fill"></i>
                 </a>
                 <a href="https://github.com/info-vivekranjan" target="_blank">
-                    <i style={{ color: "black" }} className="ri-github-fill"></i>
+                    <i className="ri-github-fill"></i>
                 </a>
 
                 <a href="https://twitter.com/vivekranjan0003" target="_blank">
-                    <i style={{ color: "#1DA1F2" }} className="ri-twitter-fill"></i>
+                    <i className="ri-twitter-fill"></i>
                 </a>
 
             </div>
@@ -27,21 +27,26 @@ function Footer() {
             <div className={styles.footerContacts}>
 
                 <a href="https://goo.gl/maps/e2bkN5VpvqkbCogR7" target="_blank">
-                    <i class="ri-map-pin-fill">
+                    <i class="ri-map-pin-fill" style={{ marginRight: "10px" }}></i>
+                    <span style={{ fontSize: "20px" }}>
                         Jamshedpur
-                    </i>
+                    </span>
+
                 </a>
 
                 <a href="tel:+919156022914">
-                    <i class="ri-phone-fill">
+                    <i class="ri-phone-fill" style={{ marginRight: "10px" }}></i>
+                    <span style={{ fontSize: "20px" }}>
                         9156022914
-                    </i>
+                    </span>
+
                 </a>
 
                 <a href="mailto:vivek0003@hotmail.com" target="_blank">
-                    <i class="ri-mail-open-fill">
+                    <i class="ri-mail-open-fill" style={{ marginRight: "10px" }}></i>
+                    <span style={{ fontSize: "20px" }}>
                         vivek0003@hotmail.com
-                    </i>
+                    </span>
                 </a>
             </div>
 

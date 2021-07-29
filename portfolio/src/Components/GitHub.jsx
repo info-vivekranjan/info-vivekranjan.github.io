@@ -28,6 +28,9 @@ function GitHub() {
             </div>
 
 
+            <div className={styles.titleHeader} data-aos="fade-right">Overall Contributions</div>
+            <div className={styles.line} data-aos="fade-left"></div>
+
 
             <div className={styles.belowGithubCont}>
                 <div className={styles.codingDetails}>

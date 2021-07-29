@@ -14,11 +14,46 @@ a{
 }
 .socialMediaLinks a i{
 
-    font-size: 45px;
+    font-size: 30px;
     color: white;
-    
-    margin: 0.5rem 3rem;
+    margin: 0.5rem 6rem;
 }
+
+.socialMediaLinks > a:nth-child(1) > i{
+
+    color: white;
+    border: 1px solid #0B66C3;
+    background-color: #0B66C3;
+    padding: 10px;
+    border-radius: 50%;
+
+
+}
+
+
+.socialMediaLinks > a:nth-child(2) > i{
+
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+
+
+}
+
+
+.socialMediaLinks > a:nth-child(3) > i{
+
+    color: white;
+    border: 1px solid #1DA1F2;
+    background-color: #1DA1F2;
+    padding: 10px;
+    border-radius: 50%;
+
+
+}
+
 
 .footerContacts{
     margin-top: 4rem;
@@ -31,16 +66,47 @@ a{
 a{
     text-decoration: none;
 }
-.footerContacts a i{
+.footerContacts a{
 
     font-size: 25px;
     color: white;
     
-    margin: 0.5rem 3rem;
+    margin: 0.5rem 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.footerContacts > a:nth-child(1) > i{
+
+    color: white;
+    border: 1px solid #0B66C3;
+    background-color: #0B66C3;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.footerContacts > a:nth-child(2) > i{
+
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.footerContacts > a:nth-child(3) > i{
+
+    color: white;
+    border: 1px solid #1DA1F2;
+    background-color: #1DA1F2;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
 
 
 .titleHeader{
