@@ -87,14 +87,14 @@
     text-decoration: none;
     
     border: 1px solid rgb(49, 49, 49);
-    padding: 3px 20px;
+    padding: 3px 10px;
     font-size: 18px;
     font-weight: 600;
     background-color: transparent;
     color: rgb(49, 49, 49);
    
     cursor: pointer;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem;
     transition: 600ms;
 }
 .demoButton > a:hover{
@@ -107,14 +107,14 @@
     text-decoration: none;
     
     border: 1px solid rgb(49, 49, 49);
-    padding: 3px 20px;
+    padding: 3px 10px;
     font-size: 18px;
     font-weight: 600;
     background-color: transparent;
     color: rgb(49, 49, 49);
     
     cursor: pointer;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem;
     transition: 600ms;
 }
 
@@ -122,6 +122,30 @@
     background-color: rgb(49, 49, 49);
     color: white;
 }
+
+
+
+.videoButton > a{
+    text-decoration: none;
+    
+    border: 1px solid rgb(49, 49, 49);
+    padding: 3px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    color: rgb(49, 49, 49);
+    
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: 600ms;
+}
+
+.videoButton > a:hover{
+    background-color: rgb(255, 0, 55);
+    color: white;
+    border: 1px solid rgb(255, 0, 55);
+}
+
 
 .titleHeader{
     color: rgb(37, 37, 37);

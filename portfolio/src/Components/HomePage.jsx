@@ -76,7 +76,7 @@ function HomePage() {
 
                         <div className={styles.nameIntro}>I'm <span className={styles.bigIntroName}>Vivek Ranjan.</span></div>
                         <div className={styles.paraIntro}>
-                            An aspiring full stack web developer proficient in MERN stack. If you are looking for a curious, acountable and adaptible team player. Then, I'm the one for the job.
+                            An aspiring full stack web developer proficient in MERN stack. Actively seeking the opportunity to work with interdisciplinary teams and contribute to developing useful products within a company.
                         </div>
 
                         <div className={styles.btnCont}>

@@ -81,6 +81,10 @@ function Projects() {
                                         <a href={`${item.github}`} target="_blank">Github</a>
                                     </div>
 
+                                    <div className={styles.videoButton}>
+                                        <a href={`${item.video}`} target="_blank">Video</a>
+                                    </div>
+
                                 </div>
 
 
