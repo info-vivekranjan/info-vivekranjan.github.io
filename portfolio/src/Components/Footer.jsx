@@ -27,7 +27,7 @@ function Footer() {
             <div className={styles.footerContacts}>
 
                 <a href="https://goo.gl/maps/e2bkN5VpvqkbCogR7" target="_blank">
-                    <i class="ri-map-pin-fill" style={{ marginRight: "10px" }}></i>
+                    <i class="ri-map-pin-fill" style={{ marginRight: "5px" }}></i>
                     <span style={{ fontSize: "20px" }}>
                         Jamshedpur
                     </span>
@@ -35,7 +35,7 @@ function Footer() {
                 </a>
 
                 <a href="tel:+919156022914">
-                    <i class="ri-phone-fill" style={{ marginRight: "10px" }}></i>
+                    <i class="ri-phone-fill" style={{ marginRight: "5px" }}></i>
                     <span style={{ fontSize: "20px" }}>
                         9156022914
                     </span>
@@ -43,7 +43,7 @@ function Footer() {
                 </a>
 
                 <a href="mailto:vivek0003@hotmail.com" target="_blank">
-                    <i class="ri-mail-open-fill" style={{ marginRight: "10px" }}></i>
+                    <i class="ri-mail-open-fill" style={{ marginRight: "5px" }}></i>
                     <span style={{ fontSize: "20px" }}>
                         vivek0003@hotmail.com
                     </span>
