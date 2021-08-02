@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Css/HomePage.module.css'
 
 import Particles from 'react-particles-js';
@@ -8,6 +8,8 @@ import { Projects } from './Projects';
 import { Footer } from './Footer';
 import { SkillSet } from './SkillSet';
 import { GitHub } from './GitHub';
+
+import { useWindowScroll } from 'react-use';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,6 +28,12 @@ function HomePage() {
     const projRef = useRef("");
     const contactRef = useRef(null)
     const techStackRef = useRef(null);
+    const moveToUpRef = useRef(null);
+
+
+    const { y: pageYOffset } = useWindowScroll();
+
+    const [isVisible, setIsVisible] = useState(false)
 
     const gotToProjects = () => {
         window.scrollTo({
@@ -50,8 +58,30 @@ function HomePage() {
     }
 
 
+    const moveToUpScroll = () => {
+        window.scrollTo({
+            top: moveToUpRef.current.offsetTop,
+            behavior: "smooth"
+        });
+    }
+
+    useEffect(() => {
+        moveToUpScroll();
+    }, [])
+
+
+    useEffect(() => {
+        if (pageYOffset > 300) {
+            setIsVisible(true)
+        } else {
+            setIsVisible(false)
+        }
+    }, [pageYOffset])
+
+
+
     return (
-        <>
+        <div ref={moveToUpRef} style={{ position: "relative" }}>
             <div className={styles.HomePageCont}>
                 <div className={styles.particalCont}>
                     <Particles height="105vh" width="100%" params={particles}></Particles>
@@ -129,8 +159,19 @@ function HomePage() {
                 <Footer />
             </div>
 
+            <>
 
-        </>
+                {
+                    isVisible &&
+                    <div className={styles.moveToUp} onClick={moveToUpScroll} data-aos="fade-up">
+                        <i class="ri-arrow-up-s-line"></i>
+                    </div>
+
+                }
+
+            </>
+
+        </div>
     )
 }
 
