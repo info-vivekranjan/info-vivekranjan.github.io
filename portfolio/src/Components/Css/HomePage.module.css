@@ -221,6 +221,7 @@
         width: 100%;
         text-align: center;
         margin-right: 0px;
+        padding-top: 30px;
         animation: fadeUpAnimation ease 1s;
         animation-iteration-count:1;
         animation-fill-mode:forwards;
@@ -228,7 +229,7 @@
     }
     .dpImgCont>img{
         width: 30%;
-        padding-top: 30px; 
+        border: 5px solid rgb(20, 138, 91);         
     
     }
 

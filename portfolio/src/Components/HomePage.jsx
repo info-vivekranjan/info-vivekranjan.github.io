@@ -28,12 +28,12 @@ function HomePage() {
     const projRef = useRef("");
     const contactRef = useRef(null)
     const techStackRef = useRef(null);
-    const moveToUpRef = useRef(null);
+    // const moveToUpRef = useRef(null);
 
 
-    const { y: pageYOffset } = useWindowScroll();
+    // const { y: pageYOffset } = useWindowScroll();
 
-    const [isVisible, setIsVisible] = useState(false)
+    // const [isVisible, setIsVisible] = useState(false)
 
     const gotToProjects = () => {
         window.scrollTo({
@@ -58,30 +58,30 @@ function HomePage() {
     }
 
 
-    const moveToUpScroll = () => {
-        window.scrollTo({
-            top: moveToUpRef.current.offsetTop,
-            behavior: "smooth"
-        });
-    }
+    // const moveToUpScroll = () => {
+    //     window.scrollTo({
+    //         top: moveToUpRef.current.offsetTop,
+    //         behavior: "smooth"
+    //     });
+    // }
 
-    useEffect(() => {
-        moveToUpScroll();
-    }, [])
+    // useEffect(() => {
+    //     moveToUpScroll();
+    // }, [])
 
 
-    useEffect(() => {
-        if (pageYOffset > 300) {
-            setIsVisible(true)
-        } else {
-            setIsVisible(false)
-        }
-    }, [pageYOffset])
+    // useEffect(() => {
+    //     if (pageYOffset > 300) {
+    //         setIsVisible(true)
+    //     } else {
+    //         setIsVisible(false)
+    //     }
+    // }, [pageYOffset])
 
 
 
     return (
-        <div ref={moveToUpRef} style={{ position: "relative" }}>
+        <div style={{ position: "relative" }}>
             <div className={styles.HomePageCont}>
                 <div className={styles.particalCont}>
                     <Particles height="105vh" width="100%" params={particles}></Particles>
@@ -159,7 +159,7 @@ function HomePage() {
                 <Footer />
             </div>
 
-            <>
+            {/* <>
 
                 {
                     isVisible &&
@@ -169,7 +169,7 @@ function HomePage() {
 
                 }
 
-            </>
+            </> */}
 
         </div>
     )
