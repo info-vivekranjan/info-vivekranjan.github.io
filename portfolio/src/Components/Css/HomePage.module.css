@@ -27,6 +27,7 @@
     width: 30%;
     text-align: right;
     margin-right: 6%;
+    padding-top: 200px;
     animation: fadeSideAnimation ease 1s;
     animation-iteration-count:1;
     animation-fill-mode:forwards;
@@ -48,8 +49,8 @@
 
 .dpImgCont>img{
     width: 50%;
-    padding-top: 200px; 
-
+    border: 7px solid rgb(20, 138, 91);
+    border-radius: 50%;
 }
 
 
