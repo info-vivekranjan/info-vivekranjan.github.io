@@ -26,7 +26,7 @@ export const data = [
         "alt": "Cred Clone",
         "heading": "Cred Clone",
         "description": "Clone of cred.club, an Indian fintech company.CRED's main feature is allowing users to make credit card payments for which they get rewarded.",
-        "demo": "https://github.com/avinashnadkar/cred",
+        "demo": "https://creds-clone.netlify.app/",
         "github": "https://github.com/avinashnadkar/cred",
         "video": "https://youtu.be/iXtryZ7rmvk",
         "techStack": {
