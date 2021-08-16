@@ -15,7 +15,7 @@ import socketioLogo from '../img/logo/socketio.svg';
 import cred from '../img/screenshots/cred.png';
 import covid_tracker from '../img/screenshots/covid-tracker.png';
 import hubspot from '../img/screenshots/hubspot.png';
-import uniMart from '../img/screenshots/uniMart.png';
+import uniMart from '../img/screenshots/uniMartNew.png';
 import todo from '../img/screenshots/todo.png';
 
 
@@ -77,9 +77,9 @@ export const data = [
         "alt": "Uni Mart",
         "heading": "Uni Mart",
         "description": "Simple cart app with all the basic features available on the JioMart website. User can add items to cart and remove from the cart.",
-        "demo": "https://unimart-demo.netlify.app/",
+        "demo": "https://unimart.netlify.app/",
         "github": "https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/uni_mart",
-        "video": "https://github.com/Shubhamsharma585/HubSpot_Clone",
+        "video": "https://unimart.netlify.app/",
         "techStack": {
             "tech1": htmlLogo,
             "tech2": cssLogo,
