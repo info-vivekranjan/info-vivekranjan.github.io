@@ -1,4 +1,4 @@
-# Todo app with (CRUD) 
+# Uni Mart (Cart App) 
 
   Simple cart app with all the basic features available on the JioMart website. User can add items to cart and remove from the cart.
 
