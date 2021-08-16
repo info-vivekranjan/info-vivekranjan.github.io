@@ -2,6 +2,7 @@
     display: flex;
 }
 
+
 .subTotalCont{
     /* border: 1px solid red; */
     max-height: 30vh;
@@ -77,4 +78,26 @@
 }
 .cartTitle div{
     margin: 5px 50px;
+}
+
+.paymentCont{
+
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
+}
+
+.paymentBtn{
+
+    background-color: #008ECC;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding: 7px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    
 }

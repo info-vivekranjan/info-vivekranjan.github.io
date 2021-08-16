@@ -11,6 +11,7 @@ import { FruitsAndVegsData } from './FruitsandVegs/FruitsAndVegsData';
 
 import { HomePage } from './FruitsandVegs/Home';
 import { Login } from './FruitsandVegs/Login';
+import { Payment } from './FruitsandVegs/payment';
 
 import { Snacks } from './FruitsandVegs/Snacks';
 import { SnacksData } from './FruitsandVegs/SnacksData';
@@ -67,6 +68,13 @@ function Routes() {
                 <Route path="/login" exact>
                     <Login />
                 </Route>
+
+                <Route path="/payment" exact>
+
+                    <Payment />
+
+                </Route>
+
                 <Route>
                     <div>
                         <h3 style={{ marginTop: "365px" }}>404 | Page Not Found</h3>

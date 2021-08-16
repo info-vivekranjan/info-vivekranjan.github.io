@@ -74,10 +74,13 @@ function Login() {
                                 <input type="password" placeholder="Enter Password" name="password" onChange={handleChange} value={password} required />
                                 <br />
                                 <br />
+
                                 <input type="submit" value="LOGIN" />
                                 <br />
                                 <br />
-
+                                <p style={{ textAlign: "left", color: "gray" }}>Note : Use reqres.in for login</p>
+                                <br />
+                                <br />
                             </form>
 
                         </div>

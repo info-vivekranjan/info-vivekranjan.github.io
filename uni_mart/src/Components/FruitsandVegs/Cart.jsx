@@ -4,10 +4,14 @@ import { CartRow } from './CartRow';
 import styles from './Cart.module.css';
 import cx from 'classnames';
 
+import { useHistory } from 'react-router-dom';
+
+
+
 
 function Cart() {
 
-    const { cart, isAuth } = useContext(CartContext);
+    const { cart, isAuth, setIsAuth, setCart, setItemCount } = useContext(CartContext);
 
     console.log(cart);
 
@@ -17,8 +21,15 @@ function Cart() {
 
     const subTotal = total_cost - total_saving
 
+    const history = useHistory()
 
 
+    const payment = () => {
+
+        setCart([])
+        history.push("/payment")
+
+    }
 
     return (
         <div style={{ backgroundColor: "#F6F6F7", minHeight: "100vh" }}>
@@ -45,6 +56,7 @@ function Cart() {
 
                         </div>
                         <div className={styles.subTotalCont}>
+
                             <div>Payment Details</div>
                             <div style={{ display: "flex", justifyContent: "space-between", margin: "10px 0px" }}>
                                 <div>MRP Total</div>
@@ -73,7 +85,14 @@ function Cart() {
                                 <b>You Save ₹{total_saving}</b>
                             </div>
 
+                            <br />
+                            <br />
+                            <br />
 
+                            <div className={styles.paymentCont}>
+                                <button className={styles.paymentBtn} onClick={payment}>Proceed to payment</button>
+
+                            </div>
 
                         </div>
                     </div>

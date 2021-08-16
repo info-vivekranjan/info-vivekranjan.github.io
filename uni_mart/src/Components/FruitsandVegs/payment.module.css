@@ -1,0 +1,14 @@
+.paymentCont{
+
+    border: 5px solid silver;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+    margin-top: 120px;
+    padding: 15px;
+
+}
+
+.paymentCont h1{
+    color: green;
+}
