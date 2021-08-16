@@ -1,18 +1,11 @@
 # Todo app with (CRUD) 
 
-    Simple cart app with all the basic features available on the JioMart website. User can add items to cart and remove from the cart.
+  Simple cart app with all the basic features available on the JioMart website. User can add items to cart and remove from the cart.
 
 
 ## Link for the app
 
-* https://unimart-demo.netlify.app/
-
-
-
-## Screenshots
-
-* Landing Page
-![Landing Page](screenshots/uniMart.png)
+* https://unimart.netlify.app/
 
 
 # Steps to install the project:
@@ -24,7 +17,7 @@
 
 ## Clone the following git repository inside any folder:
 
-* https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/CRUD_Todo_App
+* https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/uni_mart
 
 ##  Open the cloned git repo in VS Code and install the required dependencies.
 
@@ -38,13 +31,36 @@
 ## Technologies used
   
   * React
-  * CSS
   * JavaScript
+  * CSS
   * Libraries used
       
       * React-dom
       * react-scripts
       * React-router-dom
-      * React-emoji
       * remix-icon
+      * axios
+      * react-alice-carousel
+      * classnames
       
+
+
+## Screenshots
+
+* Landing Page
+![Landing Page](screenshots/uniMart.png)
+
+* Snacks Page
+![Snacks Page](screenshots/snacks.png)
+
+* Fruits & Vegs Page
+![Fruits Page](screenshots/fruits.png)
+
+* Dairy and Bakery Page
+![Dairy Page](screenshots/dairy.png)
+
+* Staples Page
+![Staples Page](screenshots/staples.png)
+
+* Cart Page
+![Cart Page](screenshots/cart.png)
