@@ -11,7 +11,8 @@
     margin: 0;
     padding: 0;
     justify-content: center;
-  
+    z-index: 1;
+
 }
 
 .navBarCart{
