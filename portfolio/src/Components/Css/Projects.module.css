@@ -1,189 +1,201 @@
-.projectContainer{
-    background-color: #e6e6e6;
-    padding-top: 20px;
-    padding-bottom: 30px; 
+.projectContainer {
+  background-color: #e6e6e6;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-.mainProjectCont{
-    width: 87%;
+.mainProjectCont {
+  width: 87%;
+  /* padding-top: 30px; */
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.eachProjectCont {
+  width: 28%;
+  /* border: 1px solid rgba(192, 192, 192, 0.63); */
+  margin: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 17px;
+}
+.eachProjectCont:hover {
+  transform: scale(1.05) !important;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.eachProjectImg > img {
+  width: 100%;
+  height: 32vh;
+}
+
+.eachProjectHeading {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  margin: 3% 8%;
+  color: rgb(49, 49, 49);
+}
+
+.eachProjectDesc {
+  font-size: 17px;
+  text-align: left;
+  margin: 3% 8%;
+  color: rgb(49, 49, 49);
+}
+
+.eachProjectTechStack {
+  width: 85%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+}
+
+.eachProjectTechStack > div > img {
+  width: 1.5rem;
+  margin: 5px;
+}
+
+.projectBtnCont {
+  display: flex;
+  justify-content: center;
+  margin: 15px 2px;
+}
+
+.demoButton > a {
+  text-decoration: none;
+
+  border: 1px solid rgb(49, 49, 49);
+  padding: 3px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgb(49, 49, 49);
+
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 600ms;
+}
+.demoButton > a:hover {
+  background-color: rgb(2, 182, 110);
+  color: white;
+  border: 1px solid rgb(2, 182, 110);
+}
+
+.githubButton > a {
+  text-decoration: none;
+
+  border: 1px solid rgb(49, 49, 49);
+  padding: 3px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgb(49, 49, 49);
+
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 600ms;
+}
+
+.githubButton > a:hover {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+.videoButton > a {
+  text-decoration: none;
+
+  border: 1px solid rgb(49, 49, 49);
+  padding: 3px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgb(49, 49, 49);
+
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 600ms;
+}
+
+.videoButton > a:hover {
+  background-color: rgb(255, 0, 55);
+  color: white;
+  border: 1px solid rgb(255, 0, 55);
+}
+
+.titleHeader {
+  color: rgb(37, 37, 37);
+  font-size: 2.5em;
+  font-weight: 500;
+  padding-top: 60px;
+}
+
+.line {
+  border: 1px solid rgb(37, 37, 37);
+  width: 5em;
+  margin: 0px auto;
+  padding: 2px 1px;
+  background-color: rgb(37, 37, 37);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries for tablet screen */
+
+@media only screen and (max-width: 900px) {
+  .projectContainer {
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .mainProjectCont {
+    width: 100%;
     /* padding-top: 30px; */
     /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: center;
-}
+  }
 
-.eachProjectCont{
-    width: 28%;
+  .eachProjectCont {
+    width: 40%;
     /* border: 1px solid rgba(192, 192, 192, 0.63); */
     margin: 1.5rem;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content :space-between;
+    justify-content: space-between;
     padding-bottom: 17px;
-
-}
-.eachProjectCont:hover{
-    
-    transform: scale(1.05) !important;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
 }
 
-
-
-.eachProjectImg > img{
-
-    width: 100%;
-    height: 32vh;
-}
-
-.eachProjectHeading{
-
-    font-size: 25px;
-    font-weight: 600;
-    text-align: left;
-    margin: 3% 8%; 
-    color: rgb(49, 49, 49);
-
-}
-
-
-.eachProjectDesc{
-    font-size: 17px;
-    text-align: left;
-    margin: 3% 8%;
-    color: rgb(49, 49, 49);
-
-}
-
-.eachProjectTechStack{
-
-    width: 85%;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    margin: auto;
-}
-
-.eachProjectTechStack > div>img{
-
-    width: 1.5rem;
-    margin: 5px;
-
-}
-
-.projectBtnCont{
-    display: flex;
-    justify-content: center;
-    margin: 15px 2px;
-}
-
-
-.demoButton > a{
-    text-decoration: none;
-    
-    border: 1px solid rgb(49, 49, 49);
-    padding: 3px 10px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: transparent;
-    color: rgb(49, 49, 49);
-   
-    cursor: pointer;
-    margin: 0.5rem;
-    transition: 600ms;
-}
-.demoButton > a:hover{
-    background-color: rgb(2, 182, 110);
-    color: white;
-    border: 1px solid rgb(2, 182, 110);
-}
-
-.githubButton > a{
-    text-decoration: none;
-    
-    border: 1px solid rgb(49, 49, 49);
-    padding: 3px 10px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: transparent;
-    color: rgb(49, 49, 49);
-    
-    cursor: pointer;
-    margin: 0.5rem;
-    transition: 600ms;
-}
-
-.githubButton > a:hover{
-    background-color: rgb(49, 49, 49);
-    color: white;
-}
-
-
-
-.videoButton > a{
-    text-decoration: none;
-    
-    border: 1px solid rgb(49, 49, 49);
-    padding: 3px 10px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: transparent;
-    color: rgb(49, 49, 49);
-    
-    cursor: pointer;
-    margin: 0.5rem;
-    transition: 600ms;
-}
-
-.videoButton > a:hover{
-    background-color: rgb(255, 0, 55);
-    color: white;
-    border: 1px solid rgb(255, 0, 55);
-}
-
-
-.titleHeader{
-    color: rgb(37, 37, 37);
-    font-size: 2.5em;
-    font-weight: 500;
-    padding-top: 60px;
-}
-
-.line{
-    border: 1px solid rgb(37, 37, 37);
-    width: 5em;
-    margin: 0px auto;
-    padding: 2px 1px;
-    background-color: rgb(37, 37, 37);
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
+/* Media Queries for mobile screen */
 
 @media only screen and (max-width: 500px) {
+  .mainProjectCont {
+    width: 100%;
 
+    display: grid;
+    margin: auto;
+  }
 
-    .mainProjectCont{
-        width: 100%;
-
-        display: grid;
-        margin: auto;
-
-    }
-    
-    .eachProjectCont{
-        width: 87%;
-        border: 1px solid rgba(192, 192, 192, 0.63);
-        margin: 1rem 1.5rem;    
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-        background-color: white;
-    }
-    
-
-} 
+  .eachProjectCont {
+    width: 87%;
+    border: 1px solid rgba(192, 192, 192, 0.63);
+    margin: 1rem 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: white;
+  }
+}

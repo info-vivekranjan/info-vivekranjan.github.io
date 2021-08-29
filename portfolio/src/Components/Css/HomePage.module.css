@@ -1,298 +1,441 @@
-.HomePageCont{
-    width: 100%;
-    height: 105vh;
-    background-image: linear-gradient(140deg,rgb(0, 45, 82),rgb(24, 105, 72));
-    position: relative;
+.HomePageCont {
+  width: 100%;
+  height: 105vh;
+  background-image: linear-gradient(140deg, rgb(0, 45, 82), rgb(24, 105, 72));
+  position: relative;
 }
 
-
-
-.particalCont{
-    position: absolute;
-    width: 100%; 
+.particalCont {
+  position: absolute;
+  width: 100%;
 }
 
-
-.mainPageContent{
-    display: flex;
-    position: absolute;
-    color: white; 
-    width: 100%;
-
+.mainPageContent {
+  display: flex;
+  position: absolute;
+  color: white;
+  width: 100%;
 }
 
-
-
-.dpImgCont{
-    width: 30%;
-    text-align: right;
-    margin-right: 6%;
-    padding-top: 200px;
-    animation: fadeSideAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+.dpImgCont {
+  width: 30%;
+  text-align: right;
+  margin-right: 6%;
+  padding-top: 200px;
+  animation: fadeSideAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeSideAnimation {
-    0% {
-        opacity: 0;
-        transform: translateX(-140px);
-        
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    
-     }
+  0% {
+    opacity: 0;
+    transform: translateX(-140px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-
-.dpImgCont>img{
-    width: 50%;
-    border: 7px solid rgb(20, 138, 91);
-    border-radius: 50%;
+.dpImgCont > img {
+  width: 50%;
+  border: 7px solid rgb(20, 138, 91);
+  border-radius: 50%;
 }
 
-
-.rightSidetextCont{
-    width: 50%;
-    padding-top: 5%;
+.rightSidetextCont {
+  width: 50%;
+  padding-top: 5%;
 }
 
-.sayingHey{
-    font-size: 65px;
-    text-align: left;
-    font-weight: 700; 
-    padding-top: 30px;
-    animation: fadeUpAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+.sayingHey {
+  font-size: 65px;
+  text-align: left;
+  font-weight: 700;
+  padding-top: 30px;
+  animation: fadeUpAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeUpAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(+40px);
-        
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    
-     }
+  0% {
+    opacity: 0;
+    transform: translateY(+40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-
-.nameIntro{
-    font-size: 40px; 
-    text-align: left; 
-    margin-top: 0; 
-    font-weight: 700 ;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+.nameIntro {
+  font-size: 40px;
+  text-align: left;
+  margin-top: 0;
+  font-weight: 700;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.bigIntroName{
-    font-size: 90px; 
-    text-align: left; 
-    margin-top: 0; 
-    font-weight: 700 ;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+.bigIntroName {
+  font-size: 90px;
+  text-align: left;
+  margin-top: 0;
+  font-weight: 700;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.paraIntro{
-    font-size: 27px; 
-    text-align: left; 
-    margin-top: 20px; 
-    font-weight: 500;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+.paraIntro {
+  font-size: 27px;
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 500;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.btnCont{
-    margin-top: 40px;
-    text-align: left;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+.btnCont {
+  margin-top: 40px;
+  text-align: left;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(-40px);
-        
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    
-     }
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+.homePageThreeBtn {
+  border: 3px solid white;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  margin: 20px;
+  cursor: pointer;
+}
+.homePageThreeBtn:hover {
+  background-color: white;
+  color: rgb(0, 45, 82);
+  transition: 800ms;
+}
 
+.arrowDownCont {
+  text-align: left;
+  margin-left: 30%;
+  margin-top: 37px;
+  animation: fadeDownAnimation ease 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
 
-.homePageThreeBtn{
+@keyframes fadeDownAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    border: 3px solid white;
-    padding: 10px 25px;
+.arrowDownCont > i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.moveToUp {
+  background-color: rgb(0, 45, 82);
+  border-radius: 50%;
+  width: 2rem;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.moveToUp > i {
+  font-size: 30px;
+}
+/* Media Queries for mobile screen */
+
+@media only screen and (max-width: 500px) {
+  .mainPageContent {
+    display: grid;
+    position: absolute;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .dpImgCont {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    padding-top: 30px;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .dpImgCont > img {
+    width: 30%;
+    border: 5px solid rgb(20, 138, 91);
+  }
+
+  .rightSidetextCont {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .sayingHey {
+    font-size: 40px;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 5%;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .nameIntro {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .bigIntroName {
+    font-size: 75px;
+    text-align: left;
+    margin-top: 0;
+    font-weight: 700;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    line-height: 80px;
+  }
+
+  .paraIntro {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .btnCont {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .homePageThreeBtn {
+    border: 2px solid white;
+    padding: 7px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    margin: 8px;
+    cursor: pointer;
+  }
+
+  .arrowDownCont {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 37px;
+  }
+}
+
+/* Media Queries for tablet screen */
+
+@media only screen and (max-width: 900px) {
+  .mainPageContent {
+    display: grid;
+    position: absolute;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .dpImgCont {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    padding-top: 30px;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .dpImgCont > img {
+    width: 20%;
+    border: 4px solid rgb(20, 138, 91);
+  }
+
+  .rightSidetextCont {
+    width: 100%;
+    padding-top: 0px;
+  }
+
+  .sayingHey {
+    font-size: 45px;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .nameIntro {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .bigIntroName {
+    font-size: 85px;
+    text-align: left;
+    margin-top: 0;
+    font-weight: 700;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    line-height: 80px;
+  }
+
+  .paraIntro {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    margin-left: 12%;
+    margin-right: 12%;
+    line-height: 30px;
+  }
+
+  .btnCont {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .homePageThreeBtn {
+    border: 2px solid white;
+    padding: 7px 18px;
     font-size: 20px;
     font-weight: 600;
     background-color: transparent;
     color: white;
-    margin: 20px;
+    margin: 8px;
     cursor: pointer;
+  }
 
-}
-.homePageThreeBtn:hover{
-    background-color: white;
-    color: rgb(0, 45, 82);
-    transition: 800ms;
-
-}
-
-
-.arrowDownCont{
-    text-align: left;
-    margin-left: 30%;
-    margin-top: 37px;
-    animation: fadeDownAnimation ease 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode:forwards;
+  .arrowDownCont {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
-@keyframes fadeDownAnimation {
-    0% {
-        opacity: 1;
-        transform: translateY(-15px);
-        
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    
-     }
-}
-
-.arrowDownCont>i{
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-.moveToUp{
-    background-color: rgb(0, 45, 82);
-    border-radius: 50%;
-    width: 2rem;
-    color: white;
-    padding: 5px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    cursor: pointer;
-}
-
-.moveToUp >i{
-    font-size: 30px;
-}
-/* Media Queries for mobile screen */
-
-
+/* Media Queries for Mobile screen */
 
 @media only screen and (max-width: 500px) {
+  .mainPageContent {
+    display: grid;
+    position: absolute;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+  }
 
+  .dpImgCont {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    padding-top: 30px;
+    animation: fadeUpAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .dpImgCont > img {
+    width: 30%;
+    border: 5px solid rgb(20, 138, 91);
+  }
 
-    .mainPageContent{
-        display: grid;
-        position: absolute;
-        color: white; 
-        width: 100%;
-        justify-content: center;
-        margin: auto;
-    }
-    
-
-    .dpImgCont{
-        width: 100%;
-        text-align: center;
-        margin-right: 0px;
-        padding-top: 30px;
-        animation: fadeUpAnimation ease 1s;
-        animation-iteration-count:1;
-        animation-fill-mode:forwards;
-
-    }
-    .dpImgCont>img{
-        width: 30%;
-        border: 5px solid rgb(20, 138, 91);         
-    
-    }
-
-    
-.rightSidetextCont{
+  .rightSidetextCont {
     width: 100%;
     padding-top: 0px;
-}
+  }
 
-.sayingHey{
+  .sayingHey {
     font-size: 40px;
     text-align: left;
-    font-weight: 700; 
+    font-weight: 700;
     margin-left: 5%;
     animation: fadeUpAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-}
-    
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 
-.nameIntro{
-    font-size: 35px; 
-    text-align: center; 
-    margin-top: 0; 
-    font-weight: 600 ;
+  .nameIntro {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 600;
+  }
 
-}
-
-.bigIntroName{
-    font-size: 75px; 
-    text-align: left; 
-    margin-top: 0; 
-    font-weight: 700 ;
+  .bigIntroName {
+    font-size: 75px;
+    text-align: left;
+    margin-top: 0;
+    font-weight: 700;
     animation: fadeInAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     line-height: 80px;
-}
+  }
 
-
-
-
-.paraIntro{
-    font-size: 18px; 
-    text-align: center; 
-    margin-top: 10px; 
+  .paraIntro {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
     font-weight: 400;
     margin-left: 6%;
     margin-right: 6%;
+    line-height: 24px;
+  }
 
-}
-
-.btnCont{
+  .btnCont {
     margin-top: 30px;
     text-align: center;
+  }
 
-}
-
-
-
-
-.homePageThreeBtn{
-
+  .homePageThreeBtn {
     border: 2px solid white;
     padding: 7px 18px;
     font-size: 15px;
@@ -301,132 +444,11 @@
     color: white;
     margin: 8px;
     cursor: pointer;
+  }
 
-}
-
-
-.arrowDownCont{
+  .arrowDownCont {
     text-align: center;
     margin-left: 0;
     margin-top: 37px;
-
-}
-
-
-}
-
-
-
-/* Media Queries for tablet screen */
-
-
-@media only screen and (max-width: 500px) {
-
-
-    .mainPageContent{
-        display: grid;
-        position: absolute;
-        color: white; 
-        width: 100%;
-        justify-content: center;
-        margin: auto;
-    }
-    
-
-    .dpImgCont{
-        width: 100%;
-        text-align: center;
-        margin-right: 0px;
-        padding-top: 30px;
-        animation: fadeUpAnimation ease 1s;
-        animation-iteration-count:1;
-        animation-fill-mode:forwards;
-
-    }
-    .dpImgCont>img{
-        width: 30%;
-        border: 5px solid rgb(20, 138, 91);         
-    
-    }
-
-    
-.rightSidetextCont{
-    width: 100%;
-    padding-top: 0px;
-}
-
-.sayingHey{
-    font-size: 40px;
-    text-align: left;
-    font-weight: 700; 
-    margin-left: 5%;
-    animation: fadeUpAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-}
-    
-
-.nameIntro{
-    font-size: 35px; 
-    text-align: center; 
-    margin-top: 0; 
-    font-weight: 600 ;
-
-}
-
-.bigIntroName{
-    font-size: 75px; 
-    text-align: left; 
-    margin-top: 0; 
-    font-weight: 700 ;
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count:1;
-    animation-fill-mode:forwards;
-    line-height: 80px;
-}
-
-
-
-
-.paraIntro{
-    font-size: 18px; 
-    text-align: center; 
-    margin-top: 10px; 
-    font-weight: 400;
-    margin-left: 6%;
-    margin-right: 6%;
-
-}
-
-.btnCont{
-    margin-top: 30px;
-    text-align: center;
-
-}
-
-
-
-
-.homePageThreeBtn{
-
-    border: 2px solid white;
-    padding: 7px 18px;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: transparent;
-    color: white;
-    margin: 8px;
-    cursor: pointer;
-
-}
-
-
-.arrowDownCont{
-    text-align: center;
-    margin-left: 0;
-    margin-top: 37px;
-
-}
-
-
+  }
 }
