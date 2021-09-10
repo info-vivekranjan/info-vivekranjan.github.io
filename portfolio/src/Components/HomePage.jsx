@@ -17,7 +17,7 @@ AOS.init();
 
 const openResume = () => {
   window.open(
-    "https://drive.google.com/file/d/1Q3BONfXJs2EOSMQ2Z2i6H8b3kdfk1XB3/view?usp=sharing",
+    "https://drive.google.com/file/d/1hbBlQz_VnX_tO84PncIJIEPKEqhbIAp5/view?usp=sharing",
     "_blank"
   );
 };
