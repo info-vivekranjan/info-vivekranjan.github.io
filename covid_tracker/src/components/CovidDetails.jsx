@@ -7,7 +7,10 @@ import covidLogo from "../covidimg.svg"
 import { useWindowScroll } from 'react-use';
 import { ThemeContext } from '../context/ThemeContextProvider';
 import { Footer } from './Footer/Footer';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 function CovidDetails() {
 
@@ -24,6 +27,31 @@ function CovidDetails() {
 
 
     const { theme } = useContext(ThemeContext);
+
+
+    const graphData = {
+        labels: ['Confirmed', 'Active', 'Recovered', 'Deceased'],
+        datasets: [
+          {
+            label: 'Covid Details',
+            data: [allData?.cases, allData?.active, allData?.recovered, allData?.deaths],
+            backgroundColor: [
+              'rgba(255, 7, 58, 0.9)',
+              'rgba(0, 123, 255, 0.9)',
+              'rgba(40, 167, 69, 0.9)',
+              'rgba(108, 117, 125, 0.9)',
+            ],
+            borderColor: [
+              'rgba(255, 7, 58, 1)',
+              'rgba(0, 123, 255, 1)',
+              'rgba(40, 167, 69, 1)',
+              'rgba(108, 117, 125, 1)',
+            ],
+            borderWidth: 1,
+          },
+        ],
+      };
+      
 
     useEffect(() => {
         if (pageYOffset > 100) {
@@ -231,6 +259,9 @@ function CovidDetails() {
 
 
 
+            </div>
+            <div style={{ width:'30%', margin: 'auto', marginBottom: '60px'}}>
+                <Doughnut data={graphData} />
             </div>
 
 

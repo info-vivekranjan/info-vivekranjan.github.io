@@ -159,7 +159,7 @@
 
 .singleConfirmed{
     /* border: 1px solid black; */
-    color: #FF073A;
+    color: rgb(255, 7, 58);
     border-radius: 5px;
     cursor: pointer;
     width: 24%;
@@ -170,7 +170,7 @@
 }
 .singleActive{
     /* border: 1px solid blue; */
-    color: #007BFF;
+    color: rgb(0, 123, 255);
     border-radius: 5px;
     cursor: pointer;
     width: 24%;
@@ -181,7 +181,7 @@
 }
 .singleRecovered{
     /* border: 1px solid rgb(238, 44, 76); */
-    color: #28A745;
+    color: rgb(40, 167, 69);
     border-radius: 5px;
     cursor: pointer;
     width: 24%;
@@ -193,7 +193,7 @@
 
 .singleDeceased{
     /* border: 1px solid blue; */
-    color: #6C757D;
+    color: rgb(108, 117, 125);
     border-radius: 5px;
     cursor: pointer;
     width: 24%;
@@ -285,7 +285,7 @@
     border-radius: 3px;
     display: grid;
     grid-template-rows: auto;
-    width: 90%;
+    width: 63%;
     margin: auto;
     color: #6C757D;
     text-align: right;
