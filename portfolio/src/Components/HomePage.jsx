@@ -17,7 +17,7 @@ AOS.init();
 
 const openResume = () => {
   window.open(
-    "https://drive.google.com/file/d/1Vka_ih9nQIRlE3er2U3pAWZxbnfc4wA6/view?usp=sharing",
+    "https://drive.google.com/file/d/1gyhRBsEQjVxvsiK1iNC8EaCVv7KLaYXX/view?usp=sharing",
     "_blank"
   );
 };
@@ -91,7 +91,7 @@ function HomePage() {
               I'm <span className={styles.bigIntroName}>Vivek Ranjan.</span>
             </div>
             <div className={styles.paraIntro}>
-              An aspiring full stack web developer proficient in MERN stack.
+              A full stack web developer proficient in MERN stack.
               Actively seeking the opportunity to work with interdisciplinary
               teams and contribute to developing useful products within a
               company.
