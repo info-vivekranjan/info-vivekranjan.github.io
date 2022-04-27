@@ -8,7 +8,7 @@ import { useWindowScroll } from 'react-use';
 import { ThemeContext } from '../context/ThemeContextProvider';
 import { Footer } from './Footer/Footer';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Doughnut } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -260,8 +260,8 @@ function CovidDetails() {
 
 
             </div>
-            <div style={{ width:'30%', margin: 'auto', marginBottom: '60px'}}>
-                <Doughnut data={graphData} />
+            <div style={{ width:'20%', margin: 'auto', marginBottom: '60px'}}>
+                <Pie data={graphData} />
             </div>
 
 
