@@ -17,17 +17,35 @@ import covid_tracker from '../img/screenshots/covid-tracker.png';
 import hubspot from '../img/screenshots/hubspot.png';
 import uniMart from '../img/screenshots/uniMartNew.png';
 import todo from '../img/screenshots/todo.png';
-
+import noteMaker from '../img/screenshots/home.png';
 
 
 export const data = [
+    {
+        "img": noteMaker,
+        "alt": "Note maker",
+        "heading": "Note maker",
+        "description": "Using this app anyone can create notes to maintain docs at one place.Used MERN stack for development and it's private to each person as it uses JWT.",
+        "demo": "https://github.com/info-vivekranjan/Note-maker",
+        "github": "https://github.com/info-vivekranjan/Note-maker",
+        "video": "https://github.com/info-vivekranjan/Note-maker",
+        "techStack": {
+            "tech1": reactLogo,
+            "tech2": cssLogo,
+            "tech3": nodejsLogo,
+            "tech4": mongoLogo,
+            "tech5": expressjsLogo,
+            "tech6": reduxLogo,
+            "tech7": materialUiLogo,
+        }
+    },
     {
         "img": cred,
         "alt": "Cred Clone",
         "heading": "Cred Clone",
         "description": "Clone of cred.club, an Indian fintech company.CRED's main feature is allowing users to make credit card payments for which they get rewarded.",
         "demo": "https://creds-clone.netlify.app/",
-        "github": "https://github.com/avinashnadkar/cred",
+        "github": "https://github.com/info-vivekranjan/cred",
         "video": "https://youtu.be/iXtryZ7rmvk",
         "techStack": {
             "tech1": htmlLogo,
