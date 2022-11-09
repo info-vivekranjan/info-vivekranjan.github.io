@@ -7,7 +7,6 @@ import dp from "../img/profile_pic.png";
 import { Projects } from "./Projects";
 import { Footer } from "./Footer";
 import { SkillSet } from "./SkillSet";
-import { GitHub } from "./GitHub";
 
 import { useWindowScroll } from "react-use";
 
@@ -137,10 +136,6 @@ function HomePage() {
         <div ref={projRef}></div>
 
         <Projects />
-      </div>
-
-      <div>
-        <GitHub />
       </div>
 
       <div>
