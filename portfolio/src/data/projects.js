@@ -18,9 +18,24 @@ import hubspot from '../img/screenshots/hubspot.png';
 import uniMart from '../img/screenshots/uniMartNew.png';
 import todo from '../img/screenshots/todo.png';
 import noteMaker from '../img/screenshots/home.png';
-
+import resumeBuilder from '../img/screenshots/resume-builder.png';
 
 export const data = [
+    {
+        "img": resumeBuilder,
+        "alt": "Resume builder",
+        "heading": "Resume builder",
+        "description": "Using this website anyone can make their resume. I have used React JS and material ui to make this website.",
+        "demo": "https://free-resume-builder.netlify.app/",
+        "github": "https://github.com/info-vivekranjan/Resume-builder",
+        "video": "https://free-resume-builder.netlify.app/",
+        "techStack": {
+            "tech1": reactLogo,
+            "tech2": jsLogo,
+            "tech3": cssLogo,
+            "tech4": materialUiLogo,
+        }
+    },
     {
         "img": noteMaker,
         "alt": "Note maker",
