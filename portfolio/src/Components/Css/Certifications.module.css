@@ -1,0 +1,161 @@
+.footerCont {
+  width: 100%;
+  /* height: 50vh; */
+  /* background: linear-gradient(140deg, rgb(0, 45, 82), rgb(0, 45, 82)); */
+  padding-bottom: 25px;
+  padding-top: 45px;
+}
+
+.titleHeader {
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.line {
+  border: 1px solid rgb(0, 0, 0);
+  width: 10em;
+  margin: 0px auto;
+  padding: 2px 1px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+
+.mainProjectCont {
+  width: 87%;
+  /* padding-top: 30px; */
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.eachProjectCont {
+  width: 20%;
+  /* border: 1px solid rgba(192, 192, 192, 0.63); */
+  margin: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 17px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.eachProjectCont:hover {
+  transform: scale(1.05) !important;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.eachProjectImg > img {
+  width: 100%;
+  height: 32vh;
+}
+
+.eachProjectHeading {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  margin: 3% 8%;
+  color: rgb(49, 49, 49);
+}
+
+.projectBtnCont {
+  display: flex;
+  justify-content: center;
+  margin: 15px 2px;
+}
+
+.demoButton > a {
+  text-decoration: none;
+
+  border: 1px solid rgb(49, 49, 49);
+  padding: 3px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgb(49, 49, 49);
+
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 600ms;
+}
+.demoButton > a:hover {
+  background-color: rgb(2, 182, 110);
+  color: white;
+  border: 1px solid rgb(2, 182, 110);
+}
+
+.githubButton > a {
+  text-decoration: none;
+
+  border: 1px solid rgb(49, 49, 49);
+  padding: 3px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: rgb(49, 49, 49);
+
+  cursor: pointer;
+  margin: 0.5rem;
+  transition: 600ms;
+}
+
+.githubButton > a:hover {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+/* Media Queries for tablet screen */
+
+@media only screen and (max-width: 900px) {
+  .projectContainer {
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .mainProjectCont {
+    width: 100%;
+    /* padding-top: 30px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .eachProjectCont {
+    width: 40%;
+    /* border: 1px solid rgba(192, 192, 192, 0.63); */
+    margin: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 17px;
+  }
+}
+
+/* Media Queries for mobile screen */
+
+@media only screen and (max-width: 500px) {
+  .mainProjectCont {
+    width: 100%;
+
+    display: grid;
+    margin: auto;
+  }
+
+  .eachProjectCont {
+    width: 87%;
+    border: 1px solid rgba(192, 192, 192, 0.63);
+    margin: 1rem 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: white;
+  }
+}

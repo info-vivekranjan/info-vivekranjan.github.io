@@ -12,6 +12,7 @@ import { useWindowScroll } from "react-use";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Certifications from "./Certifications";
 AOS.init();
 
 const openResume = () => {
@@ -25,6 +26,7 @@ function HomePage() {
   const projRef = useRef("");
   const contactRef = useRef(null);
   const techStackRef = useRef(null);
+  const certRef = useRef(null);
   // const moveToUpRef = useRef(null);
 
   // const { y: pageYOffset } = useWindowScroll();
@@ -48,6 +50,13 @@ function HomePage() {
   const goDowntoTechStack = () => {
     window.scrollTo({
       top: techStackRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
+  const goDowntoCertifications = () => {
+    window.scrollTo({
+      top: certRef.current.offsetTop,
       behavior: "smooth",
     });
   };
@@ -104,6 +113,12 @@ function HomePage() {
               >
                 Projects
               </button>
+              <button
+                className={styles.homePageThreeBtn}
+                onClick={goDowntoCertifications}
+              >
+                Certifications
+              </button>
               <button className={styles.homePageThreeBtn} onClick={gotoContact}>
                 Contact
               </button>
@@ -136,6 +151,12 @@ function HomePage() {
         <div ref={projRef}></div>
 
         <Projects />
+      </div>
+
+      <div>
+        <div ref={certRef}></div>
+
+        <Certifications />
       </div>
 
       <div>
