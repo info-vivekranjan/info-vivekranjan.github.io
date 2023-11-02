@@ -15,12 +15,27 @@ import socketioLogo from '../img/logo/socketio.svg';
 import cred from '../img/screenshots/cred.png';
 import covid_tracker from '../img/screenshots/covid-tracker.png';
 import hubspot from '../img/screenshots/hubspot.png';
-import uniMart from '../img/screenshots/uniMartNew.png';
 import todo from '../img/screenshots/todo.png';
 import noteMaker from '../img/screenshots/home.png';
 import resumeBuilder from '../img/screenshots/resume-builder.png';
+import CanvasApp from '../img/screenshots/CanvasApp.png';
 
 export const data = [
+    {
+        "img": CanvasApp,
+        "alt": "Canvas App",
+        "heading": "Canvas App",
+        "description": "Using this webapp anyone can make and download any type of templates for example markeing or any purpose. I have used React JS, FabricJS, Canvas and material ui to make this website.",
+        "demo": "https://3yfvsg-2500.csb.app/",
+        "github": "https://github.com/info-vivekranjan/canvas-app",
+        "video": "https://3yfvsg-2500.csb.app/",
+        "techStack": {
+            "tech1": reactLogo,
+            "tech2": jsLogo,
+            "tech3": cssLogo,
+            "tech4": materialUiLogo,
+        }
+    },
     {
         "img": resumeBuilder,
         "alt": "Resume builder",
@@ -102,22 +117,6 @@ export const data = [
             "tech4": reduxLogo,
             "tech5": materialUiLogo
 
-
-        }
-    },
-    {
-        "img": uniMart,
-        "alt": "Uni Mart",
-        "heading": "Uni Mart",
-        "description": "Simple cart app with all the basic features available on the JioMart website. User can add items to cart and remove from the cart.",
-        "demo": "https://unimart.netlify.app/",
-        "github": "https://github.com/info-vivekranjan/info-vivekranjan.github.io/tree/main/uni_mart",
-        "video": "https://unimart.netlify.app/",
-        "techStack": {
-            "tech1": htmlLogo,
-            "tech2": cssLogo,
-            "tech3": jsLogo,
-            "tech4": reactLogo,
 
         }
     },

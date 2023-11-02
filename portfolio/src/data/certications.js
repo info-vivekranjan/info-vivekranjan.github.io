@@ -1,10 +1,19 @@
 import JavaScriptBasic from "../img/certifications/JavaScriptBasic.png";
+import JavaScriptIntermediate from "../img/certifications/Javascript_intermediate.png";
 import ProblemSolvingBasic from "../img/certifications/ProblemSolvingBasic.png";
 import ReactBasic from "../img/certifications/ReactBasic.png";
 import SQLBasic from "../img/certifications/SQLBasic.png";
 import WebDeveloper from "../img/certifications/webDeveloper.jpg";
 
 export const data = [
+    {
+        "img": JavaScriptIntermediate,
+        "alt": "JavaScript Intermediate",
+        "heading": "JavaScript Intermediate",
+        "demo": JavaScriptIntermediate,
+        "link": "https://www.hackerrank.com/certificates/a7825250f1a0",
+    },
+
     {
         "img": JavaScriptBasic,
         "alt": "JavaScript Basic",
