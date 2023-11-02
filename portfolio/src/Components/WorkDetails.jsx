@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Css/WorkDetails.css";
-import location from "../img/logo/location-pin.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
