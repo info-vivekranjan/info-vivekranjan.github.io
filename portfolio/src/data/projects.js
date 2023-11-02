@@ -125,9 +125,9 @@ export const data = [
         "alt": "Hubspot Clone",
         "heading": "HubSpot Clone",
         "description": "Clone of hubspot.com, an American developer and marketer of software products for inbound marketing, sales, and customer service.",
-        "demo": "https://hubspot-clone.herokuapp.com/",
-        "github": "https://github.com/Shubhamsharma585/HubSpot_Clone",
-        "video": "https://github.com/Shubhamsharma585/HubSpot_Clone",
+        "demo": "https://github.com/info-vivekranjan/HubSpot_Clone",
+        "github": "https://github.com/info-vivekranjan/HubSpot_Clone",
+        "video": "https://github.com/info-vivekranjan/HubSpot_Clone",
         "techStack": {
             "tech1": htmlLogo,
             "tech2": cssLogo,

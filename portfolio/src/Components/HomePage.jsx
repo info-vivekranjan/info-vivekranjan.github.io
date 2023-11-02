@@ -7,6 +7,7 @@ import dp from "../img/profile_pic.png";
 import { Projects } from "./Projects";
 import { Footer } from "./Footer";
 import { SkillSet } from "./SkillSet";
+import WorkDetails from "./WorkDetails";
 
 import { useWindowScroll } from "react-use";
 
@@ -25,7 +26,7 @@ const openResume = () => {
 function HomePage() {
   const projRef = useRef("");
   const contactRef = useRef(null);
-  const techStackRef = useRef(null);
+  const workRef = useRef(null);
   const certRef = useRef(null);
   // const moveToUpRef = useRef(null);
 
@@ -49,7 +50,7 @@ function HomePage() {
 
   const goDowntoTechStack = () => {
     window.scrollTo({
-      top: techStackRef.current.offsetTop,
+      top: workRef.current.offsetTop,
       behavior: "smooth",
     });
   };
@@ -99,10 +100,9 @@ function HomePage() {
               I'm <span className={styles.bigIntroName}>Vivek Ranjan.</span>
             </div>
             <div className={styles.paraIntro}>
-              A full stack web developer proficient in MERN stack.
-              Actively seeking the opportunity to work with interdisciplinary
-              teams and contribute to developing useful products within a
-              company.
+              A full stack web developer proficient in MERN stack. Actively
+              seeking the opportunity to work with interdisciplinary teams and
+              contribute to developing useful products within a company.
             </div>
 
             <div className={styles.btnCont}>
@@ -131,7 +131,7 @@ function HomePage() {
             </div>
 
             <div className={styles.arrowDownCont}>
-              <div ref={techStackRef}></div>
+              <div ref={workRef}></div>
 
               <i
                 className="ri-arrow-down-s-line"
@@ -143,7 +143,11 @@ function HomePage() {
       </div>
 
       <div>
-        <div ref={techStackRef}></div>
+        <div ref={workRef}></div>
+        <WorkDetails />
+      </div>
+
+      <div>
         <SkillSet />
       </div>
 
