@@ -102,6 +102,58 @@ a {
   margin-top: 10px;
 }
 
+/* Example CSS for styling the form */
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.submitButton {
+  width: 105%;
+  background: linear-gradient(140deg, rgb(0, 45, 82), rgb(24, 105, 72));
+  color: #fff;
+  padding: 10px 0px;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  /* align-self: flex-end; */
+}
+
+.submitButton:hover {
+  background: linear-gradient(140deg, rgb(24, 105, 72), rgb(0, 45, 82));
+}
+
 @media only screen and (max-width: 900px) {
   .socialMediaLinks {
     margin-top: 2rem;
